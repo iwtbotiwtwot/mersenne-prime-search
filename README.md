@@ -10,9 +10,14 @@ separate lanes:
 
 ## Current status
 
-The repository is at **bootstrap v0.1.0**. It contains a tested exact
-Lucas–Lehmer implementation and the public interface for future frozen SLC
-exports. It does **not** contain a new-prime claim.
+The repository is at **research export v0.2.0**. It contains a tested exact
+Lucas–Lehmer implementation and the first frozen SAM/SLC export:
+
+- 1,858 prime-exponent `SEARCH_INPUT` rows from MP-S8; and
+- owner selection 1196, $p=143{,}064{,}041$, at `LLT_IN_PROGRESS` with an
+  exact checkpoint receipt after 110 of 143,064,039 iterations.
+
+It does **not** contain a completed result or new-prime claim.
 
 For prime $p>2$, the baseline starts with $s_0=4$ and computes
 
@@ -57,6 +62,12 @@ repository carries the same boundary.
 - [`research/00_BASELINE.md`](research/00_BASELINE.md): mathematical baseline.
 - [`research/01_SAM_SLC_SEARCH_BRANCH.md`](research/01_SAM_SLC_SEARCH_BRANCH.md):
   typed research lane.
+- [`research/02_SAM_MERSENNE_LINEAGE.md`](research/02_SAM_MERSENNE_LINEAGE.md):
+  compact MP-S0--S9 research lineage.
+- [`research/03_CANDIDATE_ADMISSION_REFERENCE.md`](research/03_CANDIDATE_ADMISSION_REFERENCE.md):
+  candidate-admission and result-stage reference.
+- [`exports/SAM_MP_S8_MP_S9_V1/`](exports/SAM_MP_S8_MP_S9_V1/README.md):
+  frozen 1,858-row queue and selection-1196 progress receipt.
 - [`docs/SEARCH_PROTOCOL.md`](docs/SEARCH_PROTOCOL.md): candidate-to-receipt flow.
 - [`docs/RESULT_POLICY.md`](docs/RESULT_POLICY.md): precise public claim states.
 - [`interface/SLC_EXPORT_CONTRACT.md`](interface/SLC_EXPORT_CONTRACT.md): frozen

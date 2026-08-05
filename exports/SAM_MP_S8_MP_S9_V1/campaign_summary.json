@@ -1,0 +1,35 @@
+{
+  "aggregate": {
+    "base2_prp_survivor_count": 654344,
+    "canonical_base_object_count": 200,
+    "deduplicated_shell_k_count": 10122,
+    "echo_depth_max": 127,
+    "echo_depth_min": 0,
+    "exact_factor_assignment_count": 0,
+    "first_unresolved_exponent": 143000029,
+    "input_exponent_count": 1858,
+    "primality_unassigned_count": 1858,
+    "q_max_bits": 168,
+    "q_min_bits": 40,
+    "scheduled_k_count_p_mod_4_1": 9595,
+    "scheduled_k_count_p_mod_4_3": 9595,
+    "small_sieve_survivor_count": 4017974,
+    "tested_opportunity_count": 17827510
+  },
+  "assigns_primality": false,
+  "bundle_id": "SAM_MP_S8_MP_S9_V1",
+  "determination": "Exact factors assign compositeness. Every no-factor row remains primality-unassigned and proceeds to an exact candidate test.",
+  "exact_bridge": {
+    "factor_coordinate": "q=2*k*p+1",
+    "first_singularity_gate": "pow(2,p,q)=1, hence ord_q(2)=p for q>1",
+    "logarithmic_shell": "k=b*2^e, so each echo advances log(q-1) by log(2) at fixed b and p",
+    "mersenne_cyclotomic_identity": "M_p=2^p-1=Phi_p(2) for prime p",
+    "p2a_specialization": "q is a radix-2 residue atom whose first primitive cyclotomic singularity is order p",
+    "p2b_custody": "deduplicate each numeric k and count each exact residue atom once"
+  },
+  "public_state": "SEARCH_INPUT",
+  "schema": "PUBLIC_SAM_MP_S8_SUMMARY_V1",
+  "source_campaign": "SLC_MERSENNE_RH_FIRST_SINGULARITY_SHELL_MP_S8_V1",
+  "source_file_sha256": "6def5e390613c19eef5156f86f1d7fc2e5d2d409e41a76b7191cdbb12649ba5a",
+  "source_semantic_sha256": "d88ca1f1246d5af0cce164f89afd89b5fb6642d7da2fe5b9d5b40bf50b0c485c"
+}

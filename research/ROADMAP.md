@@ -6,18 +6,19 @@
 - Known-result regression suite.
 - Public claim and export boundaries.
 
-## Phase 1 — active research branch
+## Phase 1 — installed
 
-- Define the first allowlisted SLC export bundle.
-- Preserve source campaign identifiers and semantic hashes.
-- Separate candidate fields, scheduler fields, and diagnostic sidecars.
-- Produce deterministic queue receipts without assigning primality.
+- First allowlisted SLC export bundle.
+- Source campaign identifiers and semantic hashes.
+- Separately typed candidate, scheduler, and diagnostic fields.
+- Deterministic 1,858-row queue receipt without a primality assignment.
 
-## Phase 2 — exact search harness
+## Phase 2 — active exact search harness
 
 - Add resumable checkpoints and deterministic work manifests.
 - Add trial-factor or probable-prime preprocessing only as typed optimization.
 - Preserve Lucas–Lehmer as the exact candidate decision.
+- Route the installed queue to a production-capable exact engine.
 
 ## Phase 3 — scale and replication
 

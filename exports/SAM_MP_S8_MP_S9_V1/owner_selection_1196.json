@@ -1,0 +1,30 @@
+{
+  "assigns_primality": false,
+  "bundle_id": "SAM_MP_S8_MP_S9_V1",
+  "checkpoint_binary_included": false,
+  "checkpoint_boundary": "The public bundle preserves the exact checkpoint hashes and progress receipt, but not the 17,883,276-byte binary state.",
+  "checkpoint_receipt": {
+    "checkpoint_file_sha256": "2392dede1b0031b45372ade47d7816ef9c449b02d9d1f071b48e551e137a8193",
+    "completed_iterations": 110,
+    "exponent": 143064041,
+    "schema": "SAM_MP_S9_LL_CHECKPOINT_V1",
+    "state_bytes": 17883005,
+    "state_low64": 16872920607969319697,
+    "state_sha256": "f039b8d2b51f83bba5cac7bb4659602e4d0f9cccffa199c38202caa74c8d45d1",
+    "terminal_iteration": 143064039
+  },
+  "completed_iterations": 110,
+  "engine": "host libgmp exact integer square with exact Mersenne fold reduction",
+  "exponent": 143064041,
+  "mersenne_object": "2^143064041-1",
+  "public_state": "LLT_IN_PROGRESS",
+  "schema": "PUBLIC_SAM_MP_S9_PROGRESS_V1",
+  "selection_index_1_based": 1196,
+  "self_tests": "9/9 PASS",
+  "source_assignment": "PRIMALITY_UNASSIGNED_TEST_IN_PROGRESS",
+  "source_campaign": "SLC_MERSENNE_LUCAS_LEHMER_MP_S9_V1",
+  "source_file_sha256": "187dd2b45dd696085b860c1abcea19ccf8a52bf1ec430d3f76fc65095211413f",
+  "source_semantic_sha256": "6ca3190ff30f67b83fc114761472192436373974e195ded1e63ff2fe0b20e4e4",
+  "terminal_iteration": 143064039,
+  "terminal_residue_zero": null
+}

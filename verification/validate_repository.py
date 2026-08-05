@@ -3,8 +3,13 @@
 
 from __future__ import annotations
 
+import csv
+import hashlib
 import json
+import re
+from math import isqrt
 from pathlib import Path
+from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,9 +22,214 @@ REQUIRED = (
     "tests/test_lucas_lehmer.py",
     "research/00_BASELINE.md",
     "research/01_SAM_SLC_SEARCH_BRANCH.md",
+    "research/02_SAM_MERSENNE_LINEAGE.md",
+    "research/03_CANDIDATE_ADMISSION_REFERENCE.md",
     "interface/SLC_EXPORT_CONTRACT.md",
     "schemas/mersenne_export_manifest.schema.json",
+    "tools/build_sam_mp_s8_export.py",
+    "exports/SAM_MP_S8_MP_S9_V1/README.md",
+    "exports/SAM_MP_S8_MP_S9_V1/manifest.json",
+    "exports/SAM_MP_S8_MP_S9_V1/campaign_summary.json",
+    "exports/SAM_MP_S8_MP_S9_V1/candidate_roster.csv",
+    "exports/SAM_MP_S8_MP_S9_V1/owner_selection_1196.json",
 )
+EXPORT = ROOT / "exports" / "SAM_MP_S8_MP_S9_V1"
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def read_object(path: Path) -> dict[str, Any]:
+    value = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(value, dict):
+        raise ValueError(f"expected JSON object: {path.relative_to(ROOT)}")
+    return value
+
+
+def is_prime(value: int) -> bool:
+    if value < 2:
+        return False
+    if value % 2 == 0:
+        return value == 2
+    for divisor in range(3, isqrt(value) + 1, 2):
+        if value % divisor == 0:
+            return False
+    return True
+
+
+def validate_export() -> list[str]:
+    failures: list[str] = []
+    manifest_path = EXPORT / "manifest.json"
+    if not manifest_path.is_file():
+        return ["missing frozen export manifest"]
+
+    try:
+        manifest = read_object(manifest_path)
+    except (json.JSONDecodeError, ValueError) as error:
+        return [f"invalid frozen export manifest: {error}"]
+
+    required = {
+        "schema_version",
+        "bundle_id",
+        "source_campaign",
+        "created_utc",
+        "assigns_primality",
+        "files",
+    }
+    allowed = required | {"source_revision", "field_types"}
+    missing = required - manifest.keys()
+    extra = manifest.keys() - allowed
+    if missing:
+        failures.append(f"export manifest missing fields: {sorted(missing)}")
+    if extra:
+        failures.append(f"export manifest has extra fields: {sorted(extra)}")
+    if manifest.get("schema_version") != "1.0.0":
+        failures.append("export manifest schema version mismatch")
+    if manifest.get("bundle_id") != "SAM_MP_S8_MP_S9_V1":
+        failures.append("export bundle id mismatch")
+    if manifest.get("assigns_primality") is not False:
+        failures.append("export manifest must assign no primality")
+    if not re.fullmatch(
+        r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z",
+        str(manifest.get("created_utc", "")),
+    ):
+        failures.append("export created_utc is not canonical UTC")
+
+    field_types = manifest.get("field_types", {})
+    if not isinstance(field_types, dict) or any(
+        value not in {"candidate", "scheduler", "diagnostic"}
+        for value in field_types.values()
+    ):
+        failures.append("export field types are invalid")
+
+    expected_files = {
+        "README.md",
+        "campaign_summary.json",
+        "candidate_roster.csv",
+        "owner_selection_1196.json",
+    }
+    listed_files: set[str] = set()
+    file_rows = manifest.get("files", [])
+    if not isinstance(file_rows, list) or not file_rows:
+        failures.append("export manifest files must be a nonempty list")
+        file_rows = []
+    for row in file_rows:
+        if not isinstance(row, dict) or set(row) != {"path", "sha256"}:
+            failures.append(f"invalid export file row: {row!r}")
+            continue
+        relative = Path(str(row["path"]))
+        digest = str(row["sha256"])
+        if relative.is_absolute() or ".." in relative.parts:
+            failures.append(f"unsafe export path: {relative}")
+            continue
+        if not re.fullmatch(r"[0-9a-f]{64}", digest):
+            failures.append(f"invalid export SHA-256: {relative}")
+            continue
+        listed_files.add(relative.as_posix())
+        target = EXPORT / relative
+        if not target.is_file():
+            failures.append(f"missing exported file: {relative}")
+        elif file_sha256(target) != digest:
+            failures.append(f"exported file hash mismatch: {relative}")
+    if listed_files != expected_files:
+        failures.append(
+            f"export allowlist mismatch: {sorted(listed_files)} != "
+            f"{sorted(expected_files)}"
+        )
+
+    try:
+        summary = read_object(EXPORT / "campaign_summary.json")
+        if summary.get("assigns_primality") is not False:
+            failures.append("campaign summary assigns primality")
+        if summary.get("public_state") != "SEARCH_INPUT":
+            failures.append("campaign summary public state mismatch")
+        aggregate = summary["aggregate"]
+        expected_aggregate = {
+            "input_exponent_count": 1858,
+            "primality_unassigned_count": 1858,
+            "exact_factor_assignment_count": 0,
+            "tested_opportunity_count": 17827510,
+            "small_sieve_survivor_count": 4017974,
+            "base2_prp_survivor_count": 654344,
+            "deduplicated_shell_k_count": 10122,
+            "q_min_bits": 40,
+            "q_max_bits": 168,
+        }
+        for key, expected in expected_aggregate.items():
+            if aggregate.get(key) != expected:
+                failures.append(f"campaign aggregate mismatch: {key}")
+    except (OSError, KeyError, TypeError, json.JSONDecodeError, ValueError) as error:
+        failures.append(f"invalid campaign summary: {error}")
+
+    try:
+        selection = read_object(EXPORT / "owner_selection_1196.json")
+        expected_selection = {
+            "assigns_primality": False,
+            "public_state": "LLT_IN_PROGRESS",
+            "selection_index_1_based": 1196,
+            "exponent": 143064041,
+            "completed_iterations": 110,
+            "terminal_iteration": 143064039,
+            "terminal_residue_zero": None,
+            "checkpoint_binary_included": False,
+        }
+        for key, expected in expected_selection.items():
+            if selection.get(key) != expected:
+                failures.append(f"owner selection mismatch: {key}")
+        if selection.get("source_assignment") != (
+            "PRIMALITY_UNASSIGNED_TEST_IN_PROGRESS"
+        ):
+            failures.append("owner selection source assignment mismatch")
+    except (OSError, json.JSONDecodeError, ValueError) as error:
+        failures.append(f"invalid owner selection receipt: {error}")
+
+    try:
+        with (EXPORT / "candidate_roster.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            rows = list(csv.DictReader(handle))
+        if len(rows) != 1858:
+            failures.append(f"candidate roster count mismatch: {len(rows)}")
+        seen: set[int] = set()
+        scheduled_total = 0
+        tested_total = 0
+        small_sieve_total = 0
+        base2_prp_total = 0
+        for index, row in enumerate(rows, start=1):
+            exponent = int(row["exponent"])
+            if int(row["selection_index_1_based"]) != index:
+                failures.append(f"candidate index mismatch at row {index}")
+            if exponent in seen or not is_prime(exponent):
+                failures.append(f"invalid candidate exponent: {exponent}")
+            seen.add(exponent)
+            if row["public_state"] != "SEARCH_INPUT":
+                failures.append(f"candidate state mismatch: {exponent}")
+            if row["factor_q"]:
+                failures.append(f"candidate unexpectedly has factor: {exponent}")
+            scheduled_total += int(row["scheduled_shell_count"])
+            tested_total += int(row["tested_opportunity_count"])
+            small_sieve_total += int(row["small_sieve_survivor_count"])
+            base2_prp_total += int(row["base2_prp_survivor_count"])
+        if rows and int(rows[1195]["exponent"]) != 143064041:
+            failures.append("selection 1196 roster mapping mismatch")
+        expected_totals = {
+            "scheduled": (scheduled_total, 17827510),
+            "tested": (tested_total, 17827510),
+            "small_sieve": (small_sieve_total, 4017974),
+            "base2_prp": (base2_prp_total, 654344),
+        }
+        for label, (observed, expected) in expected_totals.items():
+            if observed != expected:
+                failures.append(f"candidate roster {label} total mismatch")
+    except (OSError, KeyError, ValueError) as error:
+        failures.append(f"invalid candidate roster: {error}")
+
+    return failures
 
 
 def main() -> int:
@@ -35,13 +245,23 @@ def main() -> int:
         except json.JSONDecodeError as error:
             failures.append(f"invalid JSON schema: {error}")
 
+    failures.extend(validate_export())
+
     forbidden = ("/home/", "file://", "gho_", "github_pat_", "BEGIN OPENSSH")
     for path in ROOT.rglob("*"):
         if not path.is_file() or ".git" in path.parts:
             continue
         if path.resolve() == Path(__file__).resolve():
             continue
-        if path.suffix.lower() not in {".md", ".py", ".json", ".yml", ".yaml"}:
+        if path.suffix.lower() not in {
+            ".cff",
+            ".csv",
+            ".json",
+            ".md",
+            ".py",
+            ".yaml",
+            ".yml",
+        }:
             continue
         text = path.read_text(encoding="utf-8")
         for marker in forbidden:
