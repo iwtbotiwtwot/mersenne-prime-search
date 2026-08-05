@@ -88,6 +88,11 @@ primality-unassigned rows over `143100000 < p <= 143200000`, with independent
 33/33 final reconstruction and source/semantic hash custody. The derivative
 does not assign primality or constitute an external submission.
 
+The completed MP-S10 Run 02 public derivative is named `SLCMP02` and is
+installed at [`exports/SLCMP02/`](../exports/SLCMP02/README.md). It contains
+1,119 primality-unassigned rows over `143200000 < p <= 143300000`, with
+independent 33/33 final reconstruction and source/semantic hash custody.
+
 The 17,883,276-byte MP-S9 binary checkpoint is not in the public bundle. Its
 file and state hashes are preserved in the progress receipt. A later
 production engine may consume the candidate, but only a completed exact

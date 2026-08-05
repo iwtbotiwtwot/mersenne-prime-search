@@ -38,6 +38,11 @@ REQUIRED = (
     "exports/SLCMP01/aggregate_summary.json",
     "exports/SLCMP01/candidate_roster.csv",
     "exports/SLCMP01/source_receipt.json",
+    "exports/SLCMP02/README.md",
+    "exports/SLCMP02/manifest.json",
+    "exports/SLCMP02/aggregate_summary.json",
+    "exports/SLCMP02/candidate_roster.csv",
+    "exports/SLCMP02/source_receipt.json",
 )
 EXPORT = ROOT / "exports" / "SAM_MP_S8_MP_S9_V1"
 SLCMP01_EXPORT = ROOT / "exports" / "SLCMP01"
@@ -239,51 +244,52 @@ def validate_export() -> list[str]:
     return failures
 
 
-def validate_slcmp01_export() -> list[str]:
+def validate_slcmp_export(export_id: str, candidate_count: int, first_exponent: str, last_exponent: str) -> list[str]:
     failures: list[str] = []
-    manifest_path = SLCMP01_EXPORT / "manifest.json"
+    export = ROOT / "exports" / export_id
+    manifest_path = export / "manifest.json"
     if not manifest_path.is_file():
-        return ["missing SLCMP01 export manifest"]
+        return [f"missing {export_id} export manifest"]
     try:
         manifest = read_object(manifest_path)
-        if manifest.get("bundle_id") != "SLCMP01":
-            failures.append("SLCMP01 bundle id mismatch")
+        if manifest.get("bundle_id") != export_id:
+            failures.append(f"{export_id} bundle id mismatch")
         if manifest.get("assigns_primality") is not False:
-            failures.append("SLCMP01 assigns primality")
+            failures.append(f"{export_id} assigns primality")
         listed = {row["path"]: row["sha256"] for row in manifest["files"]}
         expected = {"README.md", "aggregate_summary.json", "candidate_roster.csv", "source_receipt.json"}
         if set(listed) != expected:
-            failures.append("SLCMP01 export allowlist mismatch")
+            failures.append(f"{export_id} export allowlist mismatch")
         for relative, digest in listed.items():
-            target = SLCMP01_EXPORT / relative
+            target = export / relative
             if not target.is_file() or file_sha256(target) != digest:
-                failures.append(f"SLCMP01 file hash mismatch: {relative}")
-        summary = read_object(SLCMP01_EXPORT / "aggregate_summary.json")
+                failures.append(f"{export_id} file hash mismatch: {relative}")
+        summary = read_object(export / "aggregate_summary.json")
         if summary.get("classification") != "The test result suggests the concept is possible.":
-            failures.append("SLCMP01 classification mismatch")
-        if summary.get("aggregate", {}).get("final_active_candidate_count") != 1226:
-            failures.append("SLCMP01 candidate aggregate mismatch")
-        receipt = read_object(SLCMP01_EXPORT / "source_receipt.json")
+            failures.append(f"{export_id} classification mismatch")
+        if summary.get("aggregate", {}).get("final_active_candidate_count") != candidate_count:
+            failures.append(f"{export_id} candidate aggregate mismatch")
+        receipt = read_object(export / "source_receipt.json")
         if receipt.get("independent_validation", {}).get("passed_check_count") != 33:
-            failures.append("SLCMP01 independent validation mismatch")
-        with (SLCMP01_EXPORT / "candidate_roster.csv").open(encoding="utf-8", newline="") as handle:
+            failures.append(f"{export_id} independent validation mismatch")
+        with (export / "candidate_roster.csv").open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
-        if len(rows) != 1226:
-            failures.append(f"SLCMP01 candidate roster count mismatch: {len(rows)}")
+        if len(rows) != candidate_count:
+            failures.append(f"{export_id} candidate roster count mismatch: {len(rows)}")
         seen: set[int] = set()
         for rank, row in enumerate(rows, start=1):
             exponent = int(row["exponent"])
             if int(row["candidate_rank"]) != rank or exponent in seen or not is_prime(exponent):
-                failures.append(f"SLCMP01 invalid candidate row: {rank}")
+                failures.append(f"{export_id} invalid candidate row: {rank}")
             if row["public_state"] != "SEARCH_INPUT":
-                failures.append(f"SLCMP01 state mismatch: {exponent}")
+                failures.append(f"{export_id} state mismatch: {exponent}")
             seen.add(exponent)
-        if rows and rows[0]["exponent"] != "143100049":
-            failures.append("SLCMP01 first exponent mismatch")
-        if rows and rows[-1]["exponent"] != "143198791":
-            failures.append("SLCMP01 last exponent mismatch")
+        if rows and rows[0]["exponent"] != first_exponent:
+            failures.append(f"{export_id} first exponent mismatch")
+        if rows and rows[-1]["exponent"] != last_exponent:
+            failures.append(f"{export_id} last exponent mismatch")
     except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
-        failures.append(f"invalid SLCMP01 export: {error}")
+        failures.append(f"invalid {export_id} export: {error}")
     return failures
 
 
@@ -301,7 +307,8 @@ def main() -> int:
             failures.append(f"invalid JSON schema: {error}")
 
     failures.extend(validate_export())
-    failures.extend(validate_slcmp01_export())
+    failures.extend(validate_slcmp_export("SLCMP01", 1226, "143100049", "143198791"))
+    failures.extend(validate_slcmp_export("SLCMP02", 1119, "143202223", "143299973"))
 
     forbidden = ("/home/", "file://", "gho_", "github_pat_", "BEGIN OPENSSH")
     for path in ROOT.rglob("*"):

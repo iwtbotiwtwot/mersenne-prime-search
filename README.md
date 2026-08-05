@@ -17,6 +17,7 @@ Lucas–Lehmer implementation and frozen SAM/SLC exports:
 - owner selection 1196, $p=143{,}064{,}041$, at `LLT_IN_PROGRESS` with an
   exact checkpoint receipt after 110 of 143,064,039 iterations; and
 - `SLCMP01`, the completed MP-S10 Run 01 public-safe 1,226-row derivative.
+- `SLCMP02`, the completed MP-S10 Run 02 public-safe 1,119-row derivative.
 
 It does **not** contain a completed result or new-prime claim.
 
@@ -70,6 +71,8 @@ repository carries the same boundary.
 - [`exports/SAM_MP_S8_MP_S9_V1/`](exports/SAM_MP_S8_MP_S9_V1/README.md):
   frozen 1,858-row queue and selection-1196 progress receipt.
 - [`exports/SLCMP01/`](exports/SLCMP01/README.md): completed MP-S10 Run 01
+  public-safe candidate derivative, with source and semantic hash custody.
+- [`exports/SLCMP02/`](exports/SLCMP02/README.md): completed MP-S10 Run 02
   public-safe candidate derivative, with source and semantic hash custody.
 - [`docs/SEARCH_PROTOCOL.md`](docs/SEARCH_PROTOCOL.md): candidate-to-receipt flow.
 - [`docs/RESULT_POLICY.md`](docs/RESULT_POLICY.md): precise public claim states.

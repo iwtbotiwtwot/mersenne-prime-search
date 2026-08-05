@@ -71,6 +71,23 @@ PROFILES: dict[str, dict[str, Any]] = {
             "release/RELEASE_MANIFEST.json": "5c894f61e782097796d638d4b262168df388b576c6ae8bf928aa7b90d84353b2",
         },
     },
+    "SLCMP02": {
+        "run_id": "MP-S10-R02",
+        "run_number": 2,
+        "interval": {"exclusive_lower": 143200000, "inclusive_upper": 143300000},
+        "candidate_count": 1119,
+        "first_exponent": 143202223,
+        "last_exponent": 143299973,
+        "files": {
+            "RUN_CONTRACT.json": "9ffdaa73b8ca1d86c2ea0677f23d2ae92a2c3d573777edb89fccac4bdc27cb79",
+            "source/SOURCE_MANIFEST.json": "fdf392cc69296a0a785126e86a607d5f479fee717af45a6ae5dfc667a0e326c7",
+            "source/OFFICIAL_SNAPSHOT_MANIFEST.json": "62e6bd1475771357eb524a442d496ae105a8c15000bfa08368e4fdab80e61e4b",
+            "release/RUN_COMPLETE.json": "76299a5c856f9c9f71189cbd8ccb75768d5546d7e51782abd255989744ab3c70",
+            "release/FINAL_VALIDATION.json": "43918b80a7fe1588bd0c64f745800180354cb1259c3645da21a38fd9f1785cf2",
+            "release/FINAL_CANDIDATES.csv": "5e14ef740fb6b072cf5f530ca15b635fec568f4c79c8ffb2415629831362ac26",
+            "release/RELEASE_MANIFEST.json": "c7bc38f936117c123c225b279f0fa8a10a22a37f4da27791bb39244f6f8a5eba",
+        },
+    },
 }
 
 
@@ -214,7 +231,7 @@ def build_bundle(source_run: Path, export_id: str, output: Path) -> None:
         "public_state": "SEARCH_INPUT",
         "aggregate": complete["aggregate"],
         "candidate_boundary": (
-            "The 1,226 rows survived the completed local screens and the frozen status "
+            f"The {profile['candidate_count']:,} rows survived the completed local screens and the frozen status "
             "triage. They remain primality-unassigned search inputs."
         ),
     }
@@ -256,16 +273,17 @@ def build_bundle(source_run: Path, export_id: str, output: Path) -> None:
     readme_path.write_text(
         f"""# {export_id} frozen candidate export
 
-`{export_id}` is the public post-run name for completed MP-S10 Run 01 over
-`143100000 < p <= 143200000`.
+`{export_id}` is the public post-run name for completed {profile['run_id']} over
+`{profile['interval']['exclusive_lower']} < p <= {profile['interval']['inclusive_upper']}`.
 
 **{CLASSIFICATION}**
 
-The source run screened 5,275 prime exponents, found 1,327 exact structural
-factors, routed 2,165 further recorded-factor assignments, executed 17,107,885
-deep-shell opportunities without another factor, and completed frozen status
-triage to this 1,226-row candidate roster. Independent reconstruction passed
-33/33 checks.
+The source run screened {complete['aggregate']['prime_exponent_count']:,} prime exponents, found
+{complete['aggregate']['screen_factor_count']:,} exact structural factors, routed
+{complete['aggregate']['official_factor_elimination_count']:,} further recorded-factor assignments,
+executed {complete['aggregate']['shell_tested_opportunity_count']:,} deep-shell opportunities,
+and completed frozen status triage to this {profile['candidate_count']:,}-row candidate roster.
+Independent reconstruction passed 33/33 checks.
 
 Every exported row is `SEARCH_INPUT` and remains primality-unassigned. This
 bundle is not an external assignment, reservation, submission, Lucas--Lehmer
