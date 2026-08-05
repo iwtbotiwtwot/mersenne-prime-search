@@ -1,0 +1,38 @@
+{
+  "assigns_primality": false,
+  "bundle_id": "SLCMP06",
+  "created_utc": "2026-08-05T20:33:12Z",
+  "field_types": {
+    "candidate_id": "candidate",
+    "candidate_rank": "scheduler",
+    "exponent": "candidate",
+    "mersenne_object": "candidate",
+    "public_state": "candidate",
+    "screen_schedule_count": "scheduler",
+    "screen_status": "diagnostic",
+    "shell_schedule_count": "scheduler",
+    "shell_status": "diagnostic",
+    "shell_tested_opportunity_count": "diagnostic"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "510624f5fa837d15f91189855c1d6f86869b36b24066f5aa4dffc6d68b7ba08b"
+    },
+    {
+      "path": "aggregate_summary.json",
+      "sha256": "28c585ab4c3ff84bc97927fedcc3b95603ad1bca0cf2f6c287c9c4c89a269655"
+    },
+    {
+      "path": "candidate_roster.csv",
+      "sha256": "a00a1a1e895d1bbbc06e6de07f8428887255ab8bf3a5e08766f1f61ae8f4e9fb"
+    },
+    {
+      "path": "source_receipt.json",
+      "sha256": "b2ecd6db24b0b3f4ee75f834978b02410876c70cece23efea5d3a0b4bb1638b3"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_campaign": "SLC_MERSENNE_TEN_BAND_EXCAVATION_MP_S10_V1",
+  "source_revision": "d64bc5b62dda647eea8b8bd4cc960b5042f663e7ae7dd82d3f33c1787478c352"
+}

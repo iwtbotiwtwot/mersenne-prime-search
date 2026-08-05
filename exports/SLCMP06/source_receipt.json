@@ -1,0 +1,54 @@
+{
+  "bundle_id": "SLCMP06",
+  "independent_validation": {
+    "check_count": 33,
+    "final_candidate_exponents_semantic_sha256": "c6c373c0e2873c6e216ba37c55a7a889aff6b2fb2fe83b6dabc91aeb1cfcfb81",
+    "passed_check_count": 33,
+    "status": "PASS"
+  },
+  "private_assignment_metadata_included": false,
+  "raw_external_responses_included": false,
+  "schema": "PUBLIC_SLCMP_SOURCE_RECEIPT_V1",
+  "semantic_hashes": {
+    "final_validation_semantic_sha256": "ef1ef26b99c6f08e26b1e87aa435a0711b10c6af312ae300b8d240938da2e25c",
+    "official_snapshot_manifest_semantic_sha256": "71a3b8286d5346327e5b152abee3dd89316cb66916e8d6d3c9543c37874b7d2a",
+    "run_complete_semantic_sha256": "d64bc5b62dda647eea8b8bd4cc960b5042f663e7ae7dd82d3f33c1787478c352",
+    "run_contract_semantic_sha256": "2debd2fd46c1e499bc3c86560af5e7d77d4b2b5ea4768c4afddf4671744ff9cf",
+    "screen_result_semantic_sha256": "ef0f7928c00c508f5a39303ffd49e73d3565760392d88f5e792dc770ea6259d4",
+    "screen_validation_semantic_sha256": "4bde5dac57a15dc11fc5a946c941213d4f040e14e96b3282e3f112fe035d8944",
+    "source_manifest_semantic_sha256": "21c8a081390ab873abfa77eb88213044c02fc745f6e078e0886b6a0e3b902526",
+    "triage_result_semantic_sha256": "4ec77ce8dcf96abac8b57eee32db3827e186758b3fbe5c30b0db71aaa8aff2c2"
+  },
+  "source_campaign": "SLC_MERSENNE_TEN_BAND_EXCAVATION_MP_S10_V1",
+  "source_files": [
+    {
+      "object": "RUN_CONTRACT.json",
+      "sha256": "094b80f0c5c07560efe4003d9c05b11c17abbbd79ada5e65451a9f6a3d817068"
+    },
+    {
+      "object": "source/SOURCE_MANIFEST.json",
+      "sha256": "dd1e3478dbc88ec95a969d0ca36754dbca266b776744eb31b9479cb039080d56"
+    },
+    {
+      "object": "source/OFFICIAL_SNAPSHOT_MANIFEST.json",
+      "sha256": "69de08fe4caf15738c0806d0fec90a4e6af07cd14138f6170552996bcc400daf"
+    },
+    {
+      "object": "release/RUN_COMPLETE.json",
+      "sha256": "0c0103fd7fc5cd1d7d3c173bece13254313f7b34cc64f660f490fec9a3976de3"
+    },
+    {
+      "object": "release/FINAL_VALIDATION.json",
+      "sha256": "8b886f8311d9868e281a77b92f97aee86e77eab0259a525269152f867c9fb9ad"
+    },
+    {
+      "object": "release/FINAL_CANDIDATES.csv",
+      "sha256": "6514fbca64bd38fde1715d04a616db1b79ce843b58ad534eedb767dfbf7f3e01"
+    },
+    {
+      "object": "release/RELEASE_MANIFEST.json",
+      "sha256": "5d48eb36664a3b2c151b76383751a30e5b2212f24f92360c1248642ebc62f776"
+    }
+  ],
+  "source_run": "MP-S10-R06"
+}
