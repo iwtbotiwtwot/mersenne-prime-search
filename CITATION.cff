@@ -7,6 +7,6 @@ authors:
     given-names: Sean
 repository-code: "https://github.com/iwtbotiwtwot/mersenne-prime-search"
 url: "https://github.com/iwtbotiwtwot/mersenne-prime-search"
-version: 0.1.0
-date-released: 2026-08-04
+version: 0.2.0
+date-released: 2026-08-05
 license: Apache-2.0
