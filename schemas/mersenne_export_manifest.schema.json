@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/iwtbotiwtwot/mersenne-prime-search/schemas/mersenne_export_manifest.schema.json",
+  "title": "SAM/SLC Mersenne export manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "bundle_id",
+    "source_campaign",
+    "created_utc",
+    "assigns_primality",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_campaign": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_revision": {
+      "type": "string"
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "assigns_primality": {
+      "const": false
+    },
+    "field_types": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": ["candidate", "scheduler", "diagnostic"]
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

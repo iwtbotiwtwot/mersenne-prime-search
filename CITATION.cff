@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or its research artifacts, please cite the repository."
+title: "Mersenne Prime Search"
+type: software
+authors:
+  - family-names: Brady
+    given-names: Sean
+repository-code: "https://github.com/iwtbotiwtwot/mersenne-prime-search"
+url: "https://github.com/iwtbotiwtwot/mersenne-prime-search"
+version: 0.1.0
+date-released: 2026-08-04
+license: Apache-2.0
