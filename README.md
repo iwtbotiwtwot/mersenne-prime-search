@@ -22,6 +22,7 @@ Lucas–Lehmer implementation and frozen SAM/SLC exports:
 - `SLCMP04`, the completed MP-S10 Run 04 public-safe 1,244-row derivative.
 - `SLCMP05`, the completed MP-S10 Run 05 public-safe 956-row derivative.
 - `SLCMP06`, the completed MP-S10 Run 06 public-safe 780-row derivative.
+- `SLCMP07`, the completed MP-S10 Run 07 public-safe 1,360-row derivative.
 
 It does **not** contain a completed result or new-prime claim.
 
@@ -85,6 +86,8 @@ repository carries the same boundary.
 - [`exports/SLCMP05/`](exports/SLCMP05/README.md): completed MP-S10 Run 05
   public-safe candidate derivative, with source and semantic hash custody.
 - [`exports/SLCMP06/`](exports/SLCMP06/README.md): completed MP-S10 Run 06
+  public-safe candidate derivative, with source and semantic hash custody.
+- [`exports/SLCMP07/`](exports/SLCMP07/README.md): completed MP-S10 Run 07
   public-safe candidate derivative, with source and semantic hash custody.
 - [`docs/SEARCH_PROTOCOL.md`](docs/SEARCH_PROTOCOL.md): candidate-to-receipt flow.
 - [`docs/RESULT_POLICY.md`](docs/RESULT_POLICY.md): precise public claim states.

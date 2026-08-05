@@ -1,5 +1,12 @@
 # Changelog
 
+## SLCMP07 — 2026-08-05
+
+- Installed the public-safe post-run export for completed MP-S10 Run 07.
+- Preserved 1,360 primality-unassigned candidate rows and source/semantic hash
+  custody from the sealed source run.
+- No new-prime claim was made.
+
 ## SLCMP06 — 2026-08-05
 
 - Installed the public-safe post-run export for completed MP-S10 Run 06.
