@@ -14,6 +14,7 @@ SLCMP01_EXPORT = ROOT / "exports" / "SLCMP01"
 SLCMP02_EXPORT = ROOT / "exports" / "SLCMP02"
 SLCMP03_EXPORT = ROOT / "exports" / "SLCMP03"
 SLCMP04_EXPORT = ROOT / "exports" / "SLCMP04"
+SLCMP05_EXPORT = ROOT / "exports" / "SLCMP05"
 sys.path.insert(0, str(ROOT / "src"))
 
 from mersenne_search import is_prime_exponent  # noqa: E402
@@ -137,6 +138,25 @@ class PublicExportTests(unittest.TestCase):
         self.assertEqual(len(rows), 1244)
         self.assertEqual(rows[0]["exponent"], "143400077")
         self.assertEqual(rows[-1]["exponent"], "143499929")
+        for row in rows:
+            self.assertTrue(is_prime_exponent(int(row["exponent"])))
+            self.assertEqual(row["public_state"], "SEARCH_INPUT")
+
+    def test_slcmp05_manifest_and_roster(self) -> None:
+        manifest = json.loads((SLCMP05_EXPORT / "manifest.json").read_text(encoding="utf-8"))
+        self.assertFalse(manifest["assigns_primality"])
+        self.assertEqual(manifest["bundle_id"], "SLCMP05")
+        for row in manifest["files"]:
+            target = SLCMP05_EXPORT / row["path"]
+            self.assertTrue(target.is_file())
+            self.assertEqual(file_sha256(target), row["sha256"])
+        summary = json.loads((SLCMP05_EXPORT / "aggregate_summary.json").read_text(encoding="utf-8"))
+        self.assertEqual(summary["aggregate"]["final_active_candidate_count"], 956)
+        with (SLCMP05_EXPORT / "candidate_roster.csv").open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual(len(rows), 956)
+        self.assertEqual(rows[0]["exponent"], "143500003")
+        self.assertEqual(rows[-1]["exponent"], "143597021")
         for row in rows:
             self.assertTrue(is_prime_exponent(int(row["exponent"])))
             self.assertEqual(row["public_state"], "SEARCH_INPUT")

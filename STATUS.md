@@ -4,7 +4,7 @@
 
 **Exact baseline:** `LUCAS_LEHMER_INSTALLED`
 
-**SAM/SLC interface:** `FROZEN_EXPORT_SAM_MP_S8_MP_S9_V1` + `SLCMP01` + `SLCMP02` + `SLCMP03` + `SLCMP04`
+**SAM/SLC interface:** `FROZEN_EXPORT_SAM_MP_S8_MP_S9_V1` + `SLCMP01` + `SLCMP02` + `SLCMP03` + `SLCMP04` + `SLCMP05`
 
 **New-prime claim:** `NONE`
 
@@ -35,6 +35,9 @@
 - Post-run alias `SLCMP04` for the completed MP-S10 Run 04 derivative:
   1,244 primality-unassigned search inputs over
   `143400000 < p <= 143500000`.
+- Post-run alias `SLCMP05` for the completed MP-S10 Run 05 derivative:
+  956 primality-unassigned search inputs over
+  `143500000 < p <= 143600000`.
 
 ## Active branch
 
@@ -48,7 +51,7 @@ Stable bootstrap material is retained on `main`.
 - A production-scale exact engine for the 1,858-row queue.
 - The MP-S9 binary checkpoint in the public bundle.
 - A candidate passing the repository's new-result publication sequence.
-- MP-S10 Run 05 (`SLCMP05`) and later sequential bands.
+- MP-S10 Run 06 (`SLCMP06`) and later sequential bands.
 
 Nothing in the current state assigns primality to selection 1196 or claims
 discovery of a new Mersenne prime.
