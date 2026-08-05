@@ -2,6 +2,15 @@
 
 This is a public exact-computation repository of the SAM Research Project.
 
+## Repository preflight
+
+Before any Mersenne commit, sync, push, branch, or pull-request operation,
+verify that the working repository and `origin` are:
+
+`https://github.com/iwtbotiwtwot/mersenne-prime-search.git`
+
+Do not publish Mersenne work to the `SAM_Research_Project` remote.
+
 1. Keep exact primality decisions separate from candidate ranking or sidecars.
 2. Do not describe an SLC score, schedule, coordinate, or prediction as a
    primality result.

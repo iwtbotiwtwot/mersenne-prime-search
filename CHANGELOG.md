@@ -1,5 +1,13 @@
 # Changelog
 
+## SLCMP01 — 2026-08-05
+
+- Installed the public-safe post-run export for completed MP-S10 Run 01.
+- Preserved 1,226 primality-unassigned candidate rows and source/semantic
+  hash custody from the sealed source run.
+- Recorded `SLCMP0` as the frozen MP-S8/MP-S9 origin alias and `SLCMP01` as
+  the completed Run 01 alias; no new-prime claim was made.
+
 ## 0.2.0 — 2026-08-05
 
 - Installed the first frozen, allowlisted SAM/SLC export bundle.

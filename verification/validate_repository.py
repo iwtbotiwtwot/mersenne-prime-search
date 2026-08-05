@@ -27,13 +27,20 @@ REQUIRED = (
     "interface/SLC_EXPORT_CONTRACT.md",
     "schemas/mersenne_export_manifest.schema.json",
     "tools/build_sam_mp_s8_export.py",
+    "tools/build_slcmp_export.py",
     "exports/SAM_MP_S8_MP_S9_V1/README.md",
     "exports/SAM_MP_S8_MP_S9_V1/manifest.json",
     "exports/SAM_MP_S8_MP_S9_V1/campaign_summary.json",
     "exports/SAM_MP_S8_MP_S9_V1/candidate_roster.csv",
     "exports/SAM_MP_S8_MP_S9_V1/owner_selection_1196.json",
+    "exports/SLCMP01/README.md",
+    "exports/SLCMP01/manifest.json",
+    "exports/SLCMP01/aggregate_summary.json",
+    "exports/SLCMP01/candidate_roster.csv",
+    "exports/SLCMP01/source_receipt.json",
 )
 EXPORT = ROOT / "exports" / "SAM_MP_S8_MP_S9_V1"
+SLCMP01_EXPORT = ROOT / "exports" / "SLCMP01"
 
 
 def file_sha256(path: Path) -> str:
@@ -232,6 +239,54 @@ def validate_export() -> list[str]:
     return failures
 
 
+def validate_slcmp01_export() -> list[str]:
+    failures: list[str] = []
+    manifest_path = SLCMP01_EXPORT / "manifest.json"
+    if not manifest_path.is_file():
+        return ["missing SLCMP01 export manifest"]
+    try:
+        manifest = read_object(manifest_path)
+        if manifest.get("bundle_id") != "SLCMP01":
+            failures.append("SLCMP01 bundle id mismatch")
+        if manifest.get("assigns_primality") is not False:
+            failures.append("SLCMP01 assigns primality")
+        listed = {row["path"]: row["sha256"] for row in manifest["files"]}
+        expected = {"README.md", "aggregate_summary.json", "candidate_roster.csv", "source_receipt.json"}
+        if set(listed) != expected:
+            failures.append("SLCMP01 export allowlist mismatch")
+        for relative, digest in listed.items():
+            target = SLCMP01_EXPORT / relative
+            if not target.is_file() or file_sha256(target) != digest:
+                failures.append(f"SLCMP01 file hash mismatch: {relative}")
+        summary = read_object(SLCMP01_EXPORT / "aggregate_summary.json")
+        if summary.get("classification") != "The test result suggests the concept is possible.":
+            failures.append("SLCMP01 classification mismatch")
+        if summary.get("aggregate", {}).get("final_active_candidate_count") != 1226:
+            failures.append("SLCMP01 candidate aggregate mismatch")
+        receipt = read_object(SLCMP01_EXPORT / "source_receipt.json")
+        if receipt.get("independent_validation", {}).get("passed_check_count") != 33:
+            failures.append("SLCMP01 independent validation mismatch")
+        with (SLCMP01_EXPORT / "candidate_roster.csv").open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        if len(rows) != 1226:
+            failures.append(f"SLCMP01 candidate roster count mismatch: {len(rows)}")
+        seen: set[int] = set()
+        for rank, row in enumerate(rows, start=1):
+            exponent = int(row["exponent"])
+            if int(row["candidate_rank"]) != rank or exponent in seen or not is_prime(exponent):
+                failures.append(f"SLCMP01 invalid candidate row: {rank}")
+            if row["public_state"] != "SEARCH_INPUT":
+                failures.append(f"SLCMP01 state mismatch: {exponent}")
+            seen.add(exponent)
+        if rows and rows[0]["exponent"] != "143100049":
+            failures.append("SLCMP01 first exponent mismatch")
+        if rows and rows[-1]["exponent"] != "143198791":
+            failures.append("SLCMP01 last exponent mismatch")
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
+        failures.append(f"invalid SLCMP01 export: {error}")
+    return failures
+
+
 def main() -> int:
     failures: list[str] = []
     for relative in REQUIRED:
@@ -246,6 +301,7 @@ def main() -> int:
             failures.append(f"invalid JSON schema: {error}")
 
     failures.extend(validate_export())
+    failures.extend(validate_slcmp01_export())
 
     forbidden = ("/home/", "file://", "gho_", "github_pat_", "BEGIN OPENSSH")
     for path in ROOT.rglob("*"):

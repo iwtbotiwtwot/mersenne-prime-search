@@ -11,11 +11,12 @@ separate lanes:
 ## Current status
 
 The repository is at **research export v0.2.0**. It contains a tested exact
-Lucas–Lehmer implementation and the first frozen SAM/SLC export:
+Lucas–Lehmer implementation and frozen SAM/SLC exports:
 
 - 1,858 prime-exponent `SEARCH_INPUT` rows from MP-S8; and
 - owner selection 1196, $p=143{,}064{,}041$, at `LLT_IN_PROGRESS` with an
-  exact checkpoint receipt after 110 of 143,064,039 iterations.
+  exact checkpoint receipt after 110 of 143,064,039 iterations; and
+- `SLCMP01`, the completed MP-S10 Run 01 public-safe 1,226-row derivative.
 
 It does **not** contain a completed result or new-prime claim.
 
@@ -68,6 +69,8 @@ repository carries the same boundary.
   candidate-admission and result-stage reference.
 - [`exports/SAM_MP_S8_MP_S9_V1/`](exports/SAM_MP_S8_MP_S9_V1/README.md):
   frozen 1,858-row queue and selection-1196 progress receipt.
+- [`exports/SLCMP01/`](exports/SLCMP01/README.md): completed MP-S10 Run 01
+  public-safe candidate derivative, with source and semantic hash custody.
 - [`docs/SEARCH_PROTOCOL.md`](docs/SEARCH_PROTOCOL.md): candidate-to-receipt flow.
 - [`docs/RESULT_POLICY.md`](docs/RESULT_POLICY.md): precise public claim states.
 - [`interface/SLC_EXPORT_CONTRACT.md`](interface/SLC_EXPORT_CONTRACT.md): frozen
