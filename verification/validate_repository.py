@@ -43,6 +43,11 @@ REQUIRED = (
     "exports/SLCMP02/aggregate_summary.json",
     "exports/SLCMP02/candidate_roster.csv",
     "exports/SLCMP02/source_receipt.json",
+    "exports/SLCMP03/README.md",
+    "exports/SLCMP03/manifest.json",
+    "exports/SLCMP03/aggregate_summary.json",
+    "exports/SLCMP03/candidate_roster.csv",
+    "exports/SLCMP03/source_receipt.json",
 )
 EXPORT = ROOT / "exports" / "SAM_MP_S8_MP_S9_V1"
 SLCMP01_EXPORT = ROOT / "exports" / "SLCMP01"

@@ -1,0 +1,32 @@
+{
+  "aggregate": {
+    "active_assignment_exclusion_count": 24,
+    "final_active_candidate_count": 1225,
+    "official_factor_elimination_count": 2182,
+    "prime_exponent_count": 5347,
+    "recorded_ll_exclusion_count": 1,
+    "recorded_prp_exclusion_count": 617,
+    "screen_factor_count": 1298,
+    "screen_survivor_count": 4049,
+    "shell_base2_prp_survivor_count": 658214,
+    "shell_exact_factor_count": 0,
+    "shell_input_count": 1867,
+    "shell_small_sieve_survivor_count": 4041068,
+    "shell_survivor_count": 1867,
+    "shell_tested_opportunity_count": 17913865
+  },
+  "assigns_primality": false,
+  "bundle_id": "SLCMP03",
+  "candidate_boundary": "The 1,225 rows survived the completed local screens and the frozen status triage. They remain primality-unassigned search inputs.",
+  "classification": "The test result suggests the concept is possible.",
+  "completed_utc": "2026-08-05T19:56:41Z",
+  "interval": {
+    "exclusive_lower": 143300000,
+    "inclusive_upper": 143400000
+  },
+  "post_run_name": "SLCMP03",
+  "public_state": "SEARCH_INPUT",
+  "schema": "PUBLIC_SLCMP_RUN_SUMMARY_V1",
+  "source_campaign": "SLC_MERSENNE_TEN_BAND_EXCAVATION_MP_S10_V1",
+  "source_run": "MP-S10-R03"
+}

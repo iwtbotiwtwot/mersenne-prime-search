@@ -88,6 +88,23 @@ PROFILES: dict[str, dict[str, Any]] = {
             "release/RELEASE_MANIFEST.json": "c7bc38f936117c123c225b279f0fa8a10a22a37f4da27791bb39244f6f8a5eba",
         },
     },
+    "SLCMP03": {
+        "run_id": "MP-S10-R03",
+        "run_number": 3,
+        "interval": {"exclusive_lower": 143300000, "inclusive_upper": 143400000},
+        "candidate_count": 1225,
+        "first_exponent": 143300093,
+        "last_exponent": 143399819,
+        "files": {
+            "RUN_CONTRACT.json": "a2ce173f3fb5aeb8bc2347f28b24071c71378ffaa0ef5ab96c2b318fcb04f563",
+            "source/SOURCE_MANIFEST.json": "43f0fdf127e92b79394fa6ba4237653e676b033580a04baf7693429e363fb6f3",
+            "source/OFFICIAL_SNAPSHOT_MANIFEST.json": "06ab9249f89c4b650a497699ed8cf8d0739850bb50b05be13c1db40b35a3cba1",
+            "release/RUN_COMPLETE.json": "9115231c59e038376ef4c00bd96420b01ffb73589bc1f8cb8807debd5f514228",
+            "release/FINAL_VALIDATION.json": "a6935a1810d58707fe0729d92a68cddb518665aaae004030aec6b99bd620bead",
+            "release/FINAL_CANDIDATES.csv": "b53e516400ed8414100038e490a4ac06262cd2e69acfae2db98e55d50d1caf0d",
+            "release/RELEASE_MANIFEST.json": "b157cae5203c745f306df5e8cb650033b748cefaab6436ba12088f3db2e18d81",
+        },
+    },
 }
 
 

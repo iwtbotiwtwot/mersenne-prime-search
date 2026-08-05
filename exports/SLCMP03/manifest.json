@@ -1,0 +1,38 @@
+{
+  "assigns_primality": false,
+  "bundle_id": "SLCMP03",
+  "created_utc": "2026-08-05T19:56:41Z",
+  "field_types": {
+    "candidate_id": "candidate",
+    "candidate_rank": "scheduler",
+    "exponent": "candidate",
+    "mersenne_object": "candidate",
+    "public_state": "candidate",
+    "screen_schedule_count": "scheduler",
+    "screen_status": "diagnostic",
+    "shell_schedule_count": "scheduler",
+    "shell_status": "diagnostic",
+    "shell_tested_opportunity_count": "diagnostic"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f6956365bb1c58f709f36b375358ded4650716ce583f08847615a121ed3f800a"
+    },
+    {
+      "path": "aggregate_summary.json",
+      "sha256": "3f171edcb4b31edee4c19f902836f031b03d630f863cd8e211d2baa1d3c98932"
+    },
+    {
+      "path": "candidate_roster.csv",
+      "sha256": "1e4377f3af5008b7ac190174a7529b9212f5957b60a41a9b783cbcbde392afce"
+    },
+    {
+      "path": "source_receipt.json",
+      "sha256": "3266572aaa660bb48ef9dc42ad0f6d281c7fd802fdde4d367c1af291153d5697"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_campaign": "SLC_MERSENNE_TEN_BAND_EXCAVATION_MP_S10_V1",
+  "source_revision": "45cfd6c1ad09a0d7f9b64da620b34230950e6bf018ee91a82a93f9d70f12f75c"
+}
