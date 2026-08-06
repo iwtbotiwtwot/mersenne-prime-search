@@ -62,7 +62,8 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 | [SLCMP24](candidates/SLCMP24.csv) | $148{,}250{,}000<p\leq148{,}500{,}000$ | 4,610 |
 | [SLCMP25](candidates/SLCMP25.csv) | $148{,}500{,}000<p\leq148{,}750{,}000$ | 4,527 |
 | [SLCMP26](candidates/SLCMP26.csv) | $148{,}750{,}000<p\leq149{,}000{,}000$ | 4,447 |
-| **Total** |  | **49,915** |
+| [SLCMP27](candidates/SLCMP27.csv) | $149{,}000{,}000<p\leq149{,}250{,}000$ | 4,485 |
+| **Total** |  | **54,400** |
 
 Each export link opens its number-only candidate roster. Every exponent remains
 a primality-unassigned search input.
