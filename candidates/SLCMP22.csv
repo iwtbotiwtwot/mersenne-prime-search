@@ -1,1 +1,2 @@
-147990377
+queue_id,queue_rank,shell_survivor_rank,exponent,mersenne_object,screen_status,shell_status,screen_schedule_count,shell_schedule_count,shell_tested_opportunity_count,external_status_at_snapshot,assignment_snapshot_utc,sam_distribution_status,assignee,assignment_utc,result_status,result_reference,notes
+SLCMP22-0001,1,4270,147990377,2^147990377-1,STRUCTURAL_SCREEN_EXHAUSTED_PRIMALITY_UNASSIGNED,FIRST_SINGULARITY_SHELL_EXHAUSTED_PRIMALITY_UNASSIGNED,513,9595,9595,NO_RECORDED_FACTOR_PRP_OR_LL_RESULT_AND_NO_ACTIVE_GIMPS_ASSIGNMENT,2026-08-06T02:51:33+00:00,UNALLOCATED,,,,,
