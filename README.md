@@ -36,20 +36,20 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 
 | Export | Exponent band | Candidates |
 |---|---:|---:|
-| [SLCMP0](exports/SAM_MP_S8_MP_S9_V1/RESULTS.md) | $143{,}000{,}000<p\leq143{,}100{,}000$ | 1,858 |
-| [SLCMP01](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP01/RESULTS.md) | $143{,}100{,}000<p\leq143{,}200{,}000$ | 1,226 |
-| [SLCMP02](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP02/RESULTS.md) | $143{,}200{,}000<p\leq143{,}300{,}000$ | 1,119 |
-| [SLCMP03](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP03/RESULTS.md) | $143{,}300{,}000<p\leq143{,}400{,}000$ | 1,225 |
-| [SLCMP04](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP04/RESULTS.md) | $143{,}400{,}000<p\leq143{,}500{,}000$ | 1,244 |
-| [SLCMP05](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP05/RESULTS.md) | $143{,}500{,}000<p\leq143{,}600{,}000$ | 956 |
-| [SLCMP06](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP06/RESULTS.md) | $143{,}600{,}000<p\leq143{,}700{,}000$ | 780 |
-| [SLCMP07](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP07/RESULTS.md) | $143{,}700{,}000<p\leq143{,}800{,}000$ | 1,360 |
-| [SLCMP08](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP08/RESULTS.md) | $143{,}800{,}000<p\leq143{,}900{,}000$ | 1,042 |
-| [SLCMP09](https://github.com/iwtbotiwtwot/mersenne-prime-search/blob/research/mersenne-search-v1/exports/SLCMP09/RESULTS.md) | $143{,}900{,}000<p\leq144{,}000{,}000$ | 1,327 |
+| [SLCMP0](candidates/SLCMP0.csv) | $143{,}000{,}000<p\leq143{,}100{,}000$ | 1,858 |
+| [SLCMP01](candidates/SLCMP01.csv) | $143{,}100{,}000<p\leq143{,}200{,}000$ | 1,226 |
+| [SLCMP02](candidates/SLCMP02.csv) | $143{,}200{,}000<p\leq143{,}300{,}000$ | 1,119 |
+| [SLCMP03](candidates/SLCMP03.csv) | $143{,}300{,}000<p\leq143{,}400{,}000$ | 1,225 |
+| [SLCMP04](candidates/SLCMP04.csv) | $143{,}400{,}000<p\leq143{,}500{,}000$ | 1,244 |
+| [SLCMP05](candidates/SLCMP05.csv) | $143{,}500{,}000<p\leq143{,}600{,}000$ | 956 |
+| [SLCMP06](candidates/SLCMP06.csv) | $143{,}600{,}000<p\leq143{,}700{,}000$ | 780 |
+| [SLCMP07](candidates/SLCMP07.csv) | $143{,}700{,}000<p\leq143{,}800{,}000$ | 1,360 |
+| [SLCMP08](candidates/SLCMP08.csv) | $143{,}800{,}000<p\leq143{,}900{,}000$ | 1,042 |
+| [SLCMP09](candidates/SLCMP09.csv) | $143{,}900{,}000<p\leq144{,}000{,}000$ | 1,327 |
 | **Total** |  | **12,137** |
 
-Each export page places its complete candidate roster directly below its
-numerical result. Every row is a primality-unassigned search input.
+Each export link opens its number-only candidate roster. Every exponent remains
+a primality-unassigned search input.
 
 ## Exact test
 
@@ -63,9 +63,6 @@ python3 -m unittest discover -s tests -v
 python3 src/mersenne_search.py 31
 python3 verification/validate_repository.py
 ```
-
-The full research sequence is recorded in
-[`research/02_SAM_MERSENNE_LINEAGE.md`](research/02_SAM_MERSENNE_LINEAGE.md).
 
 This is a SAM Research Project repository. The
 [`SAM Public Stewardship Pledge`](STEWARDSHIP_PLEDGE.md) applies. Code is
