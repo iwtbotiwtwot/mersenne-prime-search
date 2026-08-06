@@ -34,6 +34,12 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 
 ## Public candidate exports
 
+**[Download the complete candidate roster as one CSV](candidates/ALL_CANDIDATES.csv)**
+
+The complete file contains the exponent and its source export. The individual
+number-only rosters remain available below. Every exponent is given freely for
+testing through the normal GIMPS assignment system.
+
 | Export | Exponent band | Candidates |
 |---|---:|---:|
 | [SLCMP0](candidates/SLCMP0.csv) | $143{,}000{,}000<p\leq143{,}100{,}000$ | 1,858 |
