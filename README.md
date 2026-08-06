@@ -139,7 +139,8 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 | [SLCMP101](candidates/SLCMP101.csv) | $167{,}500{,}000<p\leq167{,}750{,}000$ | 4,770 |
 | [SLCMP102](candidates/SLCMP102.csv) | $167{,}750{,}000<p\leq168{,}000{,}000$ | 4,722 |
 | [SLCMP103](candidates/SLCMP103.csv) | $168{,}000{,}000<p\leq168{,}250{,}000$ | 4,576 |
-| **Total** |  | **393,019** |
+| [SLCMP104](candidates/SLCMP104.csv) | $168{,}250{,}000<p\leq168{,}500{,}000$ | 4,782 |
+| **Total** |  | **397,801** |
 
 Each export link opens that test's complete candidate table. Every exponent
 remains a primality-unassigned search input.
