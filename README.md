@@ -36,229 +36,230 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 
 | Export | Exponent band | Candidates |
 |---|---:|---:|
-| [SLCMP0](candidates/SLCMP0.csv) | $143{,}000{,}000<p\leq143{,}100{,}000$ | 1,858 |
-| [SLCMP01](candidates/SLCMP01.csv) | $143{,}100{,}000<p\leq143{,}200{,}000$ | 1,226 |
-| [SLCMP02](candidates/SLCMP02.csv) | $143{,}200{,}000<p\leq143{,}300{,}000$ | 1,119 |
-| [SLCMP03](candidates/SLCMP03.csv) | $143{,}300{,}000<p\leq143{,}400{,}000$ | 1,225 |
-| [SLCMP04](candidates/SLCMP04.csv) | $143{,}400{,}000<p\leq143{,}500{,}000$ | 1,244 |
-| [SLCMP05](candidates/SLCMP05.csv) | $143{,}500{,}000<p\leq143{,}600{,}000$ | 956 |
-| [SLCMP06](candidates/SLCMP06.csv) | $143{,}600{,}000<p\leq143{,}700{,}000$ | 780 |
-| [SLCMP07](candidates/SLCMP07.csv) | $143{,}700{,}000<p\leq143{,}800{,}000$ | 1,360 |
-| [SLCMP08](candidates/SLCMP08.csv) | $143{,}800{,}000<p\leq143{,}900{,}000$ | 1,042 |
-| [SLCMP09](candidates/SLCMP09.csv) | $143{,}900{,}000<p\leq144{,}000{,}000$ | 1,327 |
-| [SLCMP11](candidates/SLCMP11.csv) | $145{,}000{,}000<p\leq145{,}250{,}000$ | 3,108 |
-| [SLCMP12](candidates/SLCMP12.csv) | $145{,}250{,}000<p\leq145{,}500{,}000$ | 3,932 |
-| [SLCMP13](candidates/SLCMP13.csv) | $145{,}500{,}000<p\leq145{,}750{,}000$ | 3,972 |
-| [SLCMP14](candidates/SLCMP14.csv) | $145{,}750{,}000<p\leq146{,}000{,}000$ | 2,320 |
-| [SLCMP15](candidates/SLCMP15.csv) | $146{,}000{,}000<p\leq146{,}250{,}000$ | 461 |
-| [SLCMP16](candidates/SLCMP16.csv) | $146{,}250{,}000<p\leq146{,}500{,}000$ | 687 |
-| [SLCMP17](candidates/SLCMP17.csv) | $146{,}500{,}000<p\leq146{,}750{,}000$ | 2,916 |
-| [SLCMP18](candidates/SLCMP18.csv) | $146{,}750{,}000<p\leq147{,}000{,}000$ | 3,391 |
-| [SLCMP19](candidates/SLCMP19.csv) | $147{,}000{,}000<p\leq147{,}250{,}000$ | 2,088 |
-| [SLCMP20](candidates/SLCMP20.csv) | $147{,}250{,}000<p\leq147{,}500{,}000$ | 244 |
-| [SLCMP21](candidates/SLCMP21.csv) | $147{,}500{,}000<p\leq147{,}750{,}000$ | 523 |
-| [SLCMP22](candidates/SLCMP22.csv) | $147{,}750{,}000<p\leq148{,}000{,}000$ | 1 |
-| [SLCMP23](candidates/SLCMP23.csv) | $148{,}000{,}000<p\leq148{,}250{,}000$ | 551 |
-| [SLCMP24](candidates/SLCMP24.csv) | $148{,}250{,}000<p\leq148{,}500{,}000$ | 4,610 |
-| [SLCMP25](candidates/SLCMP25.csv) | $148{,}500{,}000<p\leq148{,}750{,}000$ | 4,527 |
-| [SLCMP26](candidates/SLCMP26.csv) | $148{,}750{,}000<p\leq149{,}000{,}000$ | 4,447 |
-| [SLCMP27](candidates/SLCMP27.csv) | $149{,}000{,}000<p\leq149{,}250{,}000$ | 4,485 |
-| [SLCMP28](candidates/SLCMP28.csv) | $149{,}250{,}000<p\leq149{,}500{,}000$ | 4,591 |
-| [SLCMP29](candidates/SLCMP29.csv) | $149{,}500{,}000<p\leq149{,}750{,}000$ | 4,630 |
-| [SLCMP30](candidates/SLCMP30.csv) | $149{,}750{,}000<p\leq150{,}000{,}000$ | 4,409 |
-| [SLCMP31](candidates/SLCMP31.csv) | $150{,}000{,}000<p\leq150{,}250{,}000$ | 4,533 |
-| [SLCMP32](candidates/SLCMP32.csv) | $150{,}250{,}000<p\leq150{,}500{,}000$ | 4,567 |
-| [SLCMP33](candidates/SLCMP33.csv) | $150{,}500{,}000<p\leq150{,}750{,}000$ | 4,557 |
-| [SLCMP34](candidates/SLCMP34.csv) | $150{,}750{,}000<p\leq151{,}000{,}000$ | 4,478 |
-| [SLCMP35](candidates/SLCMP35.csv) | $151{,}000{,}000<p\leq151{,}250{,}000$ | 4,564 |
-| [SLCMP36](candidates/SLCMP36.csv) | $151{,}250{,}000<p\leq151{,}500{,}000$ | 4,467 |
-| [SLCMP37](candidates/SLCMP37.csv) | $151{,}500{,}000<p\leq151{,}750{,}000$ | 4,528 |
-| [SLCMP38](candidates/SLCMP38.csv) | $151{,}750{,}000<p\leq152{,}000{,}000$ | 4,572 |
-| [SLCMP39](candidates/SLCMP39.csv) | $152{,}000{,}000<p\leq152{,}250{,}000$ | 4,500 |
-| [SLCMP40](candidates/SLCMP40.csv) | $152{,}250{,}000<p\leq152{,}500{,}000$ | 4,534 |
-| [SLCMP41](candidates/SLCMP41.csv) | $152{,}500{,}000<p\leq152{,}750{,}000$ | 4,566 |
-| [SLCMP42](candidates/SLCMP42.csv) | $152{,}750{,}000<p\leq153{,}000{,}000$ | 4,413 |
-| [SLCMP43](candidates/SLCMP43.csv) | $153{,}000{,}000<p\leq153{,}250{,}000$ | 4,625 |
-| [SLCMP44](candidates/SLCMP44.csv) | $153{,}250{,}000<p\leq153{,}500{,}000$ | 4,512 |
-| [SLCMP45](candidates/SLCMP45.csv) | $153{,}500{,}000<p\leq153{,}750{,}000$ | 4,534 |
-| [SLCMP46](candidates/SLCMP46.csv) | $153{,}750{,}000<p\leq154{,}000{,}000$ | 3,885 |
-| [SLCMP47](candidates/SLCMP47.csv) | $154{,}000{,}000<p\leq154{,}250{,}000$ | 3,435 |
-| [SLCMP48](candidates/SLCMP48.csv) | $154{,}250{,}000<p\leq154{,}500{,}000$ | 4,505 |
-| [SLCMP49](candidates/SLCMP49.csv) | $154{,}500{,}000<p\leq154{,}750{,}000$ | 4,556 |
-| [SLCMP50](candidates/SLCMP50.csv) | $154{,}750{,}000<p\leq155{,}000{,}000$ | 4,514 |
-| [SLCMP51](candidates/SLCMP51.csv) | $155{,}000{,}000<p\leq155{,}250{,}000$ | 4,546 |
-| [SLCMP52](candidates/SLCMP52.csv) | $155{,}250{,}000<p\leq155{,}500{,}000$ | 4,351 |
-| [SLCMP53](candidates/SLCMP53.csv) | $155{,}500{,}000<p\leq155{,}750{,}000$ | 4,414 |
-| [SLCMP54](candidates/SLCMP54.csv) | $155{,}750{,}000<p\leq156{,}000{,}000$ | 4,402 |
-| [SLCMP55](candidates/SLCMP55.csv) | $156{,}000{,}000<p\leq156{,}250{,}000$ | 4,535 |
-| [SLCMP56](candidates/SLCMP56.csv) | $156{,}250{,}000<p\leq156{,}500{,}000$ | 4,533 |
-| [SLCMP57](candidates/SLCMP57.csv) | $156{,}500{,}000<p\leq156{,}750{,}000$ | 4,400 |
-| [SLCMP58](candidates/SLCMP58.csv) | $156{,}750{,}000<p\leq157{,}000{,}000$ | 4,512 |
-| [SLCMP59](candidates/SLCMP59.csv) | $157{,}000{,}000<p\leq157{,}250{,}000$ | 4,507 |
-| [SLCMP60](candidates/SLCMP60.csv) | $157{,}250{,}000<p\leq157{,}500{,}000$ | 4,458 |
-| [SLCMP61](candidates/SLCMP61.csv) | $157{,}500{,}000<p\leq157{,}750{,}000$ | 4,502 |
-| [SLCMP62](candidates/SLCMP62.csv) | $157{,}750{,}000<p\leq158{,}000{,}000$ | 4,518 |
-| [SLCMP63](candidates/SLCMP63.csv) | $158{,}000{,}000<p\leq158{,}250{,}000$ | 4,397 |
-| [SLCMP64](candidates/SLCMP64.csv) | $158{,}250{,}000<p\leq158{,}500{,}000$ | 4,441 |
-| [SLCMP65](candidates/SLCMP65.csv) | $158{,}500{,}000<p\leq158{,}750{,}000$ | 4,386 |
-| [SLCMP66](candidates/SLCMP66.csv) | $158{,}750{,}000<p\leq159{,}000{,}000$ | 4,468 |
-| [SLCMP67](candidates/SLCMP67.csv) | $159{,}000{,}000<p\leq159{,}250{,}000$ | 4,200 |
-| [SLCMP68](candidates/SLCMP68.csv) | $159{,}250{,}000<p\leq159{,}500{,}000$ | 4,375 |
-| [SLCMP69](candidates/SLCMP69.csv) | $159{,}500{,}000<p\leq159{,}750{,}000$ | 4,336 |
-| [SLCMP70](candidates/SLCMP70.csv) | $159{,}750{,}000<p\leq160{,}000{,}000$ | 4,393 |
-| [SLCMP71](candidates/SLCMP71.csv) | $160{,}000{,}000<p\leq160{,}250{,}000$ | 4,280 |
-| [SLCMP72](candidates/SLCMP72.csv) | $160{,}250{,}000<p\leq160{,}500{,}000$ | 3,765 |
-| [SLCMP73](candidates/SLCMP73.csv) | $160{,}500{,}000<p\leq160{,}750{,}000$ | 4,215 |
-| [SLCMP74](candidates/SLCMP74.csv) | $160{,}750{,}000<p\leq161{,}000{,}000$ | 4,079 |
-| [SLCMP75](candidates/SLCMP75.csv) | $161{,}000{,}000<p\leq161{,}250{,}000$ | 4,226 |
-| [SLCMP76](candidates/SLCMP76.csv) | $161{,}250{,}000<p\leq161{,}500{,}000$ | 4,108 |
-| [SLCMP77](candidates/SLCMP77.csv) | $161{,}500{,}000<p\leq161{,}750{,}000$ | 3,650 |
-| [SLCMP78](candidates/SLCMP78.csv) | $161{,}750{,}000<p\leq162{,}000{,}000$ | 4,216 |
-| [SLCMP79](candidates/SLCMP79.csv) | $162{,}000{,}000<p\leq162{,}250{,}000$ | 4,646 |
-| [SLCMP80](candidates/SLCMP80.csv) | $162{,}250{,}000<p\leq162{,}500{,}000$ | 4,200 |
-| [SLCMP81](candidates/SLCMP81.csv) | $162{,}500{,}000<p\leq162{,}750{,}000$ | 4,327 |
-| [SLCMP82](candidates/SLCMP82.csv) | $162{,}750{,}000<p\leq163{,}000{,}000$ | 4,643 |
-| [SLCMP83](candidates/SLCMP83.csv) | $163{,}000{,}000<p\leq163{,}250{,}000$ | 2,667 |
-| [SLCMP84](candidates/SLCMP84.csv) | $163{,}250{,}000<p\leq163{,}500{,}000$ | 4,893 |
-| [SLCMP85](candidates/SLCMP85.csv) | $163{,}500{,}000<p\leq163{,}750{,}000$ | 4,821 |
-| [SLCMP86](candidates/SLCMP86.csv) | $163{,}750{,}000<p\leq164{,}000{,}000$ | 4,790 |
-| [SLCMP87](candidates/SLCMP87.csv) | $164{,}000{,}000<p\leq164{,}250{,}000$ | 4,687 |
-| [SLCMP88](candidates/SLCMP88.csv) | $164{,}250{,}000<p\leq164{,}500{,}000$ | 4,752 |
-| [SLCMP89](candidates/SLCMP89.csv) | $164{,}500{,}000<p\leq164{,}750{,}000$ | 4,734 |
-| [SLCMP90](candidates/SLCMP90.csv) | $164{,}750{,}000<p\leq165{,}000{,}000$ | 4,665 |
-| [SLCMP91](candidates/SLCMP91.csv) | $165{,}000{,}000<p\leq165{,}250{,}000$ | 4,549 |
-| [SLCMP92](candidates/SLCMP92.csv) | $165{,}250{,}000<p\leq165{,}500{,}000$ | 4,658 |
-| [SLCMP93](candidates/SLCMP93.csv) | $165{,}500{,}000<p\leq165{,}750{,}000$ | 4,581 |
-| [SLCMP94](candidates/SLCMP94.csv) | $165{,}750{,}000<p\leq166{,}000{,}000$ | 4,683 |
-| [SLCMP95](candidates/SLCMP95.csv) | $166{,}000{,}000<p\leq166{,}250{,}000$ | 4,779 |
-| [SLCMP96](candidates/SLCMP96.csv) | $166{,}250{,}000<p\leq166{,}500{,}000$ | 4,822 |
-| [SLCMP97](candidates/SLCMP97.csv) | $166{,}500{,}000<p\leq166{,}750{,}000$ | 4,704 |
-| [SLCMP98](candidates/SLCMP98.csv) | $166{,}750{,}000<p\leq167{,}000{,}000$ | 4,714 |
-| [SLCMP99](candidates/SLCMP99.csv) | $167{,}000{,}000<p\leq167{,}250{,}000$ | 4,762 |
-| [SLCMP100](candidates/SLCMP100.csv) | $167{,}250{,}000<p\leq167{,}500{,}000$ | 4,786 |
-| [SLCMP101](candidates/SLCMP101.csv) | $167{,}500{,}000<p\leq167{,}750{,}000$ | 4,770 |
-| [SLCMP102](candidates/SLCMP102.csv) | $167{,}750{,}000<p\leq168{,}000{,}000$ | 4,722 |
-| [SLCMP103](candidates/SLCMP103.csv) | $168{,}000{,}000<p\leq168{,}250{,}000$ | 4,576 |
-| [SLCMP104](candidates/SLCMP104.csv) | $168{,}250{,}000<p\leq168{,}500{,}000$ | 4,782 |
-| [SLCMP105](candidates/SLCMP105.csv) | $168{,}500{,}000<p\leq168{,}750{,}000$ | 4,643 |
-| [SLCMP106](candidates/SLCMP106.csv) | $168{,}750{,}000<p\leq169{,}000{,}000$ | 4,697 |
-| [SLCMP107](candidates/SLCMP107.csv) | $169{,}000{,}000<p\leq169{,}250{,}000$ | 4,982 |
-| [SLCMP108](candidates/SLCMP108.csv) | $169{,}250{,}000<p\leq169{,}500{,}000$ | 4,832 |
-| [SLCMP109](candidates/SLCMP109.csv) | $169{,}500{,}000<p\leq169{,}750{,}000$ | 4,847 |
-| [SLCMP110](candidates/SLCMP110.csv) | $169{,}750{,}000<p\leq170{,}000{,}000$ | 4,853 |
-| [SLCMP111](candidates/SLCMP111.csv) | $170{,}000{,}000<p\leq170{,}250{,}000$ | 4,945 |
-| [SLCMP112](candidates/SLCMP112.csv) | $170{,}250{,}000<p\leq170{,}500{,}000$ | 4,882 |
-| [SLCMP113](candidates/SLCMP113.csv) | $170{,}500{,}000<p\leq170{,}750{,}000$ | 4,832 |
-| [SLCMP114](candidates/SLCMP114.csv) | $170{,}750{,}000<p\leq171{,}000{,}000$ | 4,908 |
-| [SLCMP115](candidates/SLCMP115.csv) | $171{,}000{,}000<p\leq171{,}250{,}000$ | 4,923 |
-| [SLCMP116](candidates/SLCMP116.csv) | $171{,}250{,}000<p\leq171{,}500{,}000$ | 4,902 |
-| [SLCMP117](candidates/SLCMP117.csv) | $171{,}500{,}000<p\leq171{,}750{,}000$ | 4,817 |
-| [SLCMP118](candidates/SLCMP118.csv) | $171{,}750{,}000<p\leq172{,}000{,}000$ | 4,705 |
-| [SLCMP119](candidates/SLCMP119.csv) | $172{,}000{,}000<p\leq172{,}250{,}000$ | 4,729 |
-| [SLCMP120](candidates/SLCMP120.csv) | $172{,}250{,}000<p\leq172{,}500{,}000$ | 4,965 |
-| [SLCMP121](candidates/SLCMP121.csv) | $172{,}500{,}000<p\leq172{,}750{,}000$ | 4,867 |
-| [SLCMP122](candidates/SLCMP122.csv) | $172{,}750{,}000<p\leq173{,}000{,}000$ | 4,848 |
-| [SLCMP123](candidates/SLCMP123.csv) | $173{,}000{,}000<p\leq173{,}250{,}000$ | 4,837 |
-| [SLCMP124](candidates/SLCMP124.csv) | $173{,}250{,}000<p\leq173{,}500{,}000$ | 4,850 |
-| [SLCMP125](candidates/SLCMP125.csv) | $173{,}500{,}000<p\leq173{,}750{,}000$ | 4,921 |
-| [SLCMP126](candidates/SLCMP126.csv) | $173{,}750{,}000<p\leq174{,}000{,}000$ | 4,913 |
-| [SLCMP127](candidates/SLCMP127.csv) | $174{,}000{,}000<p\leq174{,}250{,}000$ | 4,825 |
-| [SLCMP128](candidates/SLCMP128.csv) | $174{,}250{,}000<p\leq174{,}500{,}000$ | 4,935 |
-| [SLCMP129](candidates/SLCMP129.csv) | $174{,}500{,}000<p\leq174{,}750{,}000$ | 4,742 |
-| [SLCMP130](candidates/SLCMP130.csv) | $174{,}750{,}000<p\leq175{,}000{,}000$ | 4,829 |
-| [SLCMP131](candidates/SLCMP131.csv) | $175{,}000{,}000<p\leq175{,}250{,}000$ | 4,867 |
-| [SLCMP132](candidates/SLCMP132.csv) | $175{,}250{,}000<p\leq175{,}500{,}000$ | 4,880 |
-| [SLCMP133](candidates/SLCMP133.csv) | $175{,}500{,}000<p\leq175{,}750{,}000$ | 4,852 |
-| [SLCMP134](candidates/SLCMP134.csv) | $175{,}750{,}000<p\leq176{,}000{,}000$ | 4,865 |
-| [SLCMP135](candidates/SLCMP135.csv) | $176{,}000{,}000<p\leq176{,}250{,}000$ | 4,634 |
-| [SLCMP136](candidates/SLCMP136.csv) | $176{,}250{,}000<p\leq176{,}500{,}000$ | 4,775 |
-| [SLCMP137](candidates/SLCMP137.csv) | $176{,}500{,}000<p\leq176{,}750{,}000$ | 4,894 |
-| [SLCMP138](candidates/SLCMP138.csv) | $176{,}750{,}000<p\leq177{,}000{,}000$ | 4,872 |
-| [SLCMP139](candidates/SLCMP139.csv) | $177{,}000{,}000<p\leq177{,}250{,}000$ | 4,848 |
-| [SLCMP140](candidates/SLCMP140.csv) | $177{,}250{,}000<p\leq177{,}500{,}000$ | 4,934 |
-| [SLCMP141](candidates/SLCMP141.csv) | $177{,}500{,}000<p\leq177{,}750{,}000$ | 4,856 |
-| [SLCMP142](candidates/SLCMP142.csv) | $177{,}750{,}000<p\leq178{,}000{,}000$ | 4,937 |
-| [SLCMP143](candidates/SLCMP143.csv) | $178{,}000{,}000<p\leq178{,}250{,}000$ | 4,913 |
-| [SLCMP144](candidates/SLCMP144.csv) | $178{,}250{,}000<p\leq178{,}500{,}000$ | 4,824 |
-| [SLCMP145](candidates/SLCMP145.csv) | $178{,}500{,}000<p\leq178{,}750{,}000$ | 4,821 |
-| [SLCMP146](candidates/SLCMP146.csv) | $178{,}750{,}000<p\leq179{,}000{,}000$ | 4,862 |
-| [SLCMP147](candidates/SLCMP147.csv) | $179{,}000{,}000<p\leq179{,}250{,}000$ | 4,935 |
-| [SLCMP148](candidates/SLCMP148.csv) | $179{,}250{,}000<p\leq179{,}500{,}000$ | 4,947 |
-| [SLCMP149](candidates/SLCMP149.csv) | $179{,}500{,}000<p\leq179{,}750{,}000$ | 4,899 |
-| [SLCMP150](candidates/SLCMP150.csv) | $179{,}750{,}000<p\leq180{,}000{,}000$ | 4,922 |
-| [SLCMP151](candidates/SLCMP151.csv) | $180{,}000{,}000<p\leq180{,}250{,}000$ | 4,698 |
-| [SLCMP152](candidates/SLCMP152.csv) | $180{,}250{,}000<p\leq180{,}500{,}000$ | 4,854 |
-| [SLCMP153](candidates/SLCMP153.csv) | $180{,}500{,}000<p\leq180{,}750{,}000$ | 4,871 |
-| [SLCMP154](candidates/SLCMP154.csv) | $180{,}750{,}000<p\leq181{,}000{,}000$ | 4,836 |
-| [SLCMP155](candidates/SLCMP155.csv) | $181{,}000{,}000<p\leq181{,}250{,}000$ | 4,776 |
-| [SLCMP156](candidates/SLCMP156.csv) | $181{,}250{,}000<p\leq181{,}500{,}000$ | 4,754 |
-| [SLCMP157](candidates/SLCMP157.csv) | $181{,}500{,}000<p\leq181{,}750{,}000$ | 4,862 |
-| [SLCMP158](candidates/SLCMP158.csv) | $181{,}750{,}000<p\leq182{,}000{,}000$ | 4,942 |
-| [SLCMP159](candidates/SLCMP159.csv) | $182{,}000{,}000<p\leq182{,}250{,}000$ | 4,877 |
-| [SLCMP160](candidates/SLCMP160.csv) | $182{,}250{,}000<p\leq182{,}500{,}000$ | 4,930 |
-| [SLCMP161](candidates/SLCMP161.csv) | $182{,}500{,}000<p\leq182{,}750{,}000$ | 4,808 |
-| [SLCMP162](candidates/SLCMP162.csv) | $182{,}750{,}000<p\leq183{,}000{,}000$ | 4,869 |
-| [SLCMP163](candidates/SLCMP163.csv) | $183{,}000{,}000<p\leq183{,}250{,}000$ | 4,849 |
-| [SLCMP164](candidates/SLCMP164.csv) | $183{,}250{,}000<p\leq183{,}500{,}000$ | 4,836 |
-| [SLCMP165](candidates/SLCMP165.csv) | $183{,}500{,}000<p\leq183{,}750{,}000$ | 4,914 |
-| [SLCMP166](candidates/SLCMP166.csv) | $183{,}750{,}000<p\leq184{,}000{,}000$ | 4,817 |
-| [SLCMP167](candidates/SLCMP167.csv) | $184{,}000{,}000<p\leq184{,}250{,}000$ | 4,911 |
-| [SLCMP168](candidates/SLCMP168.csv) | $184{,}250{,}000<p\leq184{,}500{,}000$ | 4,944 |
-| [SLCMP169](candidates/SLCMP169.csv) | $184{,}500{,}000<p\leq184{,}750{,}000$ | 4,809 |
-| [SLCMP170](candidates/SLCMP170.csv) | $184{,}750{,}000<p\leq185{,}000{,}000$ | 4,844 |
-| [SLCMP171](candidates/SLCMP171.csv) | $185{,}000{,}000<p\leq185{,}250{,}000$ | 4,896 |
-| [SLCMP172](candidates/SLCMP172.csv) | $185{,}250{,}000<p\leq185{,}500{,}000$ | 4,785 |
-| [SLCMP173](candidates/SLCMP173.csv) | $185{,}500{,}000<p\leq185{,}750{,}000$ | 4,793 |
-| [SLCMP174](candidates/SLCMP174.csv) | $185{,}750{,}000<p\leq186{,}000{,}000$ | 4,860 |
-| [SLCMP175](candidates/SLCMP175.csv) | $186{,}000{,}000<p\leq186{,}250{,}000$ | 4,841 |
-| [SLCMP176](candidates/SLCMP176.csv) | $186{,}250{,}000<p\leq186{,}500{,}000$ | 4,845 |
-| [SLCMP177](candidates/SLCMP177.csv) | $186{,}500{,}000<p\leq186{,}750{,}000$ | 4,925 |
-| [SLCMP178](candidates/SLCMP178.csv) | $186{,}750{,}000<p\leq187{,}000{,}000$ | 4,827 |
-| [SLCMP179](candidates/SLCMP179.csv) | $187{,}000{,}000<p\leq187{,}250{,}000$ | 4,853 |
-| [SLCMP180](candidates/SLCMP180.csv) | $187{,}250{,}000<p\leq187{,}500{,}000$ | 4,817 |
-| [SLCMP181](candidates/SLCMP181.csv) | $187{,}500{,}000<p\leq187{,}750{,}000$ | 4,675 |
-| [SLCMP182](candidates/SLCMP182.csv) | $187{,}750{,}000<p\leq188{,}000{,}000$ | 4,555 |
-| [SLCMP183](candidates/SLCMP183.csv) | $188{,}000{,}000<p\leq188{,}250{,}000$ | 4,858 |
-| [SLCMP184](candidates/SLCMP184.csv) | $188{,}250{,}000<p\leq188{,}500{,}000$ | 4,894 |
-| [SLCMP185](candidates/SLCMP185.csv) | $188{,}500{,}000<p\leq188{,}750{,}000$ | 4,839 |
-| [SLCMP186](candidates/SLCMP186.csv) | $188{,}750{,}000<p\leq189{,}000{,}000$ | 4,885 |
-| [SLCMP187](candidates/SLCMP187.csv) | $189{,}000{,}000<p\leq189{,}250{,}000$ | 4,905 |
-| [SLCMP188](candidates/SLCMP188.csv) | $189{,}250{,}000<p\leq189{,}500{,}000$ | 4,873 |
-| [SLCMP189](candidates/SLCMP189.csv) | $189{,}500{,}000<p\leq189{,}750{,}000$ | 4,915 |
-| [SLCMP190](candidates/SLCMP190.csv) | $189{,}750{,}000<p\leq190{,}000{,}000$ | 4,943 |
-| [SLCMP191](candidates/SLCMP191.csv) | $190{,}000{,}000<p\leq190{,}250{,}000$ | 4,773 |
-| [SLCMP192](candidates/SLCMP192.csv) | $190{,}250{,}000<p\leq190{,}500{,}000$ | 4,795 |
-| [SLCMP193](candidates/SLCMP193.csv) | $190{,}500{,}000<p\leq190{,}750{,}000$ | 4,639 |
-| [SLCMP194](candidates/SLCMP194.csv) | $190{,}750{,}000<p\leq191{,}000{,}000$ | 4,828 |
-| [SLCMP195](candidates/SLCMP195.csv) | $191{,}000{,}000<p\leq191{,}250{,}000$ | 4,799 |
-| [SLCMP196](candidates/SLCMP196.csv) | $191{,}250{,}000<p\leq191{,}500{,}000$ | 4,613 |
-| [SLCMP197](candidates/SLCMP197.csv) | $191{,}500{,}000<p\leq191{,}750{,}000$ | 4,524 |
-| [SLCMP198](candidates/SLCMP198.csv) | $191{,}750{,}000<p\leq192{,}000{,}000$ | 4,625 |
-| [SLCMP199](candidates/SLCMP199.csv) | $192{,}000{,}000<p\leq192{,}250{,}000$ | 4,359 |
-| [SLCMP200](candidates/SLCMP200.csv) | $192{,}250{,}000<p\leq192{,}500{,}000$ | 4,068 |
-| [SLCMP201](candidates/SLCMP201.csv) | $192{,}500{,}000<p\leq192{,}750{,}000$ | 1,112 |
-| [SLCMP202](candidates/SLCMP202.csv) | $192{,}750{,}000<p\leq193{,}000{,}000$ | 149 |
-| [SLCMP203](candidates/SLCMP203.csv) | $193{,}000{,}000<p\leq193{,}250{,}000$ | 732 |
-| [SLCMP204](candidates/SLCMP204.csv) | $193{,}250{,}000<p\leq193{,}500{,}000$ | 4,937 |
-| [SLCMP205](candidates/SLCMP205.csv) | $193{,}500{,}000<p\leq193{,}750{,}000$ | 4,960 |
-| [SLCMP206](candidates/SLCMP206.csv) | $193{,}750{,}000<p\leq194{,}000{,}000$ | 4,931 |
-| [SLCMP207](candidates/SLCMP207.csv) | $194{,}000{,}000<p\leq194{,}250{,}000$ | 4,939 |
-| [SLCMP208](candidates/SLCMP208.csv) | $194{,}250{,}000<p\leq194{,}500{,}000$ | 4,991 |
-| [SLCMP209](candidates/SLCMP209.csv) | $194{,}500{,}000<p\leq194{,}750{,}000$ | 4,972 |
-| [SLCMP210](candidates/SLCMP210.csv) | $194{,}750{,}000<p\leq195{,}000{,}000$ | 4,971 |
-| [SLCMP211](candidates/SLCMP211.csv) | $195{,}000{,}000<p\leq195{,}250{,}000$ | 4,883 |
-| [SLCMP212](candidates/SLCMP212.csv) | $195{,}250{,}000<p\leq195{,}500{,}000$ | 4,889 |
-| [SLCMP213](candidates/SLCMP213.csv) | $195{,}500{,}000<p\leq195{,}750{,}000$ | 4,852 |
-| [SLCMP214](candidates/SLCMP214.csv) | $195{,}750{,}000<p\leq196{,}000{,}000$ | 4,991 |
-| [SLCMP215](candidates/SLCMP215.csv) | $196{,}000{,}000<p\leq196{,}250{,}000$ | 4,803 |
-| [SLCMP216](candidates/SLCMP216.csv) | $196{,}250{,}000<p\leq196{,}500{,}000$ | 4,826 |
-| [SLCMP217](candidates/SLCMP217.csv) | $196{,}500{,}000<p\leq196{,}750{,}000$ | 4,950 |
-| [SLCMP218](candidates/SLCMP218.csv) | $196{,}750{,}000<p\leq197{,}000{,}000$ | 5,006 |
-| [SLCMP219](candidates/SLCMP219.csv) | $197{,}000{,}000<p\leq197{,}250{,}000$ | 4,908 |
-| [SLCMP220](candidates/SLCMP220.csv) | $197{,}250{,}000<p\leq197{,}500{,}000$ | 5,056 |
-| [SLCMP221](candidates/SLCMP221.csv) | $197{,}500{,}000<p\leq197{,}750{,}000$ | 4,835 |
-| [SLCMP222](candidates/SLCMP222.csv) | $197{,}750{,}000<p\leq198{,}000{,}000$ | 4,947 |
-| **Total** |  | **956,615** |
+| [SLCMP0](candidates/SLCMP0.csv) | `143,000,000 < p <= 143,100,000` | 1,858 |
+| [SLCMP01](candidates/SLCMP01.csv) | `143,100,000 < p <= 143,200,000` | 1,226 |
+| [SLCMP02](candidates/SLCMP02.csv) | `143,200,000 < p <= 143,300,000` | 1,119 |
+| [SLCMP03](candidates/SLCMP03.csv) | `143,300,000 < p <= 143,400,000` | 1,225 |
+| [SLCMP04](candidates/SLCMP04.csv) | `143,400,000 < p <= 143,500,000` | 1,244 |
+| [SLCMP05](candidates/SLCMP05.csv) | `143,500,000 < p <= 143,600,000` | 956 |
+| [SLCMP06](candidates/SLCMP06.csv) | `143,600,000 < p <= 143,700,000` | 780 |
+| [SLCMP07](candidates/SLCMP07.csv) | `143,700,000 < p <= 143,800,000` | 1,360 |
+| [SLCMP08](candidates/SLCMP08.csv) | `143,800,000 < p <= 143,900,000` | 1,042 |
+| [SLCMP09](candidates/SLCMP09.csv) | `143,900,000 < p <= 144,000,000` | 1,327 |
+| [SLCMP11](candidates/SLCMP11.csv) | `145,000,000 < p <= 145,250,000` | 3,108 |
+| [SLCMP12](candidates/SLCMP12.csv) | `145,250,000 < p <= 145,500,000` | 3,932 |
+| [SLCMP13](candidates/SLCMP13.csv) | `145,500,000 < p <= 145,750,000` | 3,972 |
+| [SLCMP14](candidates/SLCMP14.csv) | `145,750,000 < p <= 146,000,000` | 2,320 |
+| [SLCMP15](candidates/SLCMP15.csv) | `146,000,000 < p <= 146,250,000` | 461 |
+| [SLCMP16](candidates/SLCMP16.csv) | `146,250,000 < p <= 146,500,000` | 687 |
+| [SLCMP17](candidates/SLCMP17.csv) | `146,500,000 < p <= 146,750,000` | 2,916 |
+| [SLCMP18](candidates/SLCMP18.csv) | `146,750,000 < p <= 147,000,000` | 3,391 |
+| [SLCMP19](candidates/SLCMP19.csv) | `147,000,000 < p <= 147,250,000` | 2,088 |
+| [SLCMP20](candidates/SLCMP20.csv) | `147,250,000 < p <= 147,500,000` | 244 |
+| [SLCMP21](candidates/SLCMP21.csv) | `147,500,000 < p <= 147,750,000` | 523 |
+| [SLCMP22](candidates/SLCMP22.csv) | `147,750,000 < p <= 148,000,000` | 1 |
+| [SLCMP23](candidates/SLCMP23.csv) | `148,000,000 < p <= 148,250,000` | 551 |
+| [SLCMP24](candidates/SLCMP24.csv) | `148,250,000 < p <= 148,500,000` | 4,610 |
+| [SLCMP25](candidates/SLCMP25.csv) | `148,500,000 < p <= 148,750,000` | 4,527 |
+| [SLCMP26](candidates/SLCMP26.csv) | `148,750,000 < p <= 149,000,000` | 4,447 |
+| [SLCMP27](candidates/SLCMP27.csv) | `149,000,000 < p <= 149,250,000` | 4,485 |
+| [SLCMP28](candidates/SLCMP28.csv) | `149,250,000 < p <= 149,500,000` | 4,591 |
+| [SLCMP29](candidates/SLCMP29.csv) | `149,500,000 < p <= 149,750,000` | 4,630 |
+| [SLCMP30](candidates/SLCMP30.csv) | `149,750,000 < p <= 150,000,000` | 4,409 |
+| [SLCMP31](candidates/SLCMP31.csv) | `150,000,000 < p <= 150,250,000` | 4,533 |
+| [SLCMP32](candidates/SLCMP32.csv) | `150,250,000 < p <= 150,500,000` | 4,567 |
+| [SLCMP33](candidates/SLCMP33.csv) | `150,500,000 < p <= 150,750,000` | 4,557 |
+| [SLCMP34](candidates/SLCMP34.csv) | `150,750,000 < p <= 151,000,000` | 4,478 |
+| [SLCMP35](candidates/SLCMP35.csv) | `151,000,000 < p <= 151,250,000` | 4,564 |
+| [SLCMP36](candidates/SLCMP36.csv) | `151,250,000 < p <= 151,500,000` | 4,467 |
+| [SLCMP37](candidates/SLCMP37.csv) | `151,500,000 < p <= 151,750,000` | 4,528 |
+| [SLCMP38](candidates/SLCMP38.csv) | `151,750,000 < p <= 152,000,000` | 4,572 |
+| [SLCMP39](candidates/SLCMP39.csv) | `152,000,000 < p <= 152,250,000` | 4,500 |
+| [SLCMP40](candidates/SLCMP40.csv) | `152,250,000 < p <= 152,500,000` | 4,534 |
+| [SLCMP41](candidates/SLCMP41.csv) | `152,500,000 < p <= 152,750,000` | 4,566 |
+| [SLCMP42](candidates/SLCMP42.csv) | `152,750,000 < p <= 153,000,000` | 4,413 |
+| [SLCMP43](candidates/SLCMP43.csv) | `153,000,000 < p <= 153,250,000` | 4,625 |
+| [SLCMP44](candidates/SLCMP44.csv) | `153,250,000 < p <= 153,500,000` | 4,512 |
+| [SLCMP45](candidates/SLCMP45.csv) | `153,500,000 < p <= 153,750,000` | 4,534 |
+| [SLCMP46](candidates/SLCMP46.csv) | `153,750,000 < p <= 154,000,000` | 3,885 |
+| [SLCMP47](candidates/SLCMP47.csv) | `154,000,000 < p <= 154,250,000` | 3,435 |
+| [SLCMP48](candidates/SLCMP48.csv) | `154,250,000 < p <= 154,500,000` | 4,505 |
+| [SLCMP49](candidates/SLCMP49.csv) | `154,500,000 < p <= 154,750,000` | 4,556 |
+| [SLCMP50](candidates/SLCMP50.csv) | `154,750,000 < p <= 155,000,000` | 4,514 |
+| [SLCMP51](candidates/SLCMP51.csv) | `155,000,000 < p <= 155,250,000` | 4,546 |
+| [SLCMP52](candidates/SLCMP52.csv) | `155,250,000 < p <= 155,500,000` | 4,351 |
+| [SLCMP53](candidates/SLCMP53.csv) | `155,500,000 < p <= 155,750,000` | 4,414 |
+| [SLCMP54](candidates/SLCMP54.csv) | `155,750,000 < p <= 156,000,000` | 4,402 |
+| [SLCMP55](candidates/SLCMP55.csv) | `156,000,000 < p <= 156,250,000` | 4,535 |
+| [SLCMP56](candidates/SLCMP56.csv) | `156,250,000 < p <= 156,500,000` | 4,533 |
+| [SLCMP57](candidates/SLCMP57.csv) | `156,500,000 < p <= 156,750,000` | 4,400 |
+| [SLCMP58](candidates/SLCMP58.csv) | `156,750,000 < p <= 157,000,000` | 4,512 |
+| [SLCMP59](candidates/SLCMP59.csv) | `157,000,000 < p <= 157,250,000` | 4,507 |
+| [SLCMP60](candidates/SLCMP60.csv) | `157,250,000 < p <= 157,500,000` | 4,458 |
+| [SLCMP61](candidates/SLCMP61.csv) | `157,500,000 < p <= 157,750,000` | 4,502 |
+| [SLCMP62](candidates/SLCMP62.csv) | `157,750,000 < p <= 158,000,000` | 4,518 |
+| [SLCMP63](candidates/SLCMP63.csv) | `158,000,000 < p <= 158,250,000` | 4,397 |
+| [SLCMP64](candidates/SLCMP64.csv) | `158,250,000 < p <= 158,500,000` | 4,441 |
+| [SLCMP65](candidates/SLCMP65.csv) | `158,500,000 < p <= 158,750,000` | 4,386 |
+| [SLCMP66](candidates/SLCMP66.csv) | `158,750,000 < p <= 159,000,000` | 4,468 |
+| [SLCMP67](candidates/SLCMP67.csv) | `159,000,000 < p <= 159,250,000` | 4,200 |
+| [SLCMP68](candidates/SLCMP68.csv) | `159,250,000 < p <= 159,500,000` | 4,375 |
+| [SLCMP69](candidates/SLCMP69.csv) | `159,500,000 < p <= 159,750,000` | 4,336 |
+| [SLCMP70](candidates/SLCMP70.csv) | `159,750,000 < p <= 160,000,000` | 4,393 |
+| [SLCMP71](candidates/SLCMP71.csv) | `160,000,000 < p <= 160,250,000` | 4,280 |
+| [SLCMP72](candidates/SLCMP72.csv) | `160,250,000 < p <= 160,500,000` | 3,765 |
+| [SLCMP73](candidates/SLCMP73.csv) | `160,500,000 < p <= 160,750,000` | 4,215 |
+| [SLCMP74](candidates/SLCMP74.csv) | `160,750,000 < p <= 161,000,000` | 4,079 |
+| [SLCMP75](candidates/SLCMP75.csv) | `161,000,000 < p <= 161,250,000` | 4,226 |
+| [SLCMP76](candidates/SLCMP76.csv) | `161,250,000 < p <= 161,500,000` | 4,108 |
+| [SLCMP77](candidates/SLCMP77.csv) | `161,500,000 < p <= 161,750,000` | 3,650 |
+| [SLCMP78](candidates/SLCMP78.csv) | `161,750,000 < p <= 162,000,000` | 4,216 |
+| [SLCMP79](candidates/SLCMP79.csv) | `162,000,000 < p <= 162,250,000` | 4,646 |
+| [SLCMP80](candidates/SLCMP80.csv) | `162,250,000 < p <= 162,500,000` | 4,200 |
+| [SLCMP81](candidates/SLCMP81.csv) | `162,500,000 < p <= 162,750,000` | 4,327 |
+| [SLCMP82](candidates/SLCMP82.csv) | `162,750,000 < p <= 163,000,000` | 4,643 |
+| [SLCMP83](candidates/SLCMP83.csv) | `163,000,000 < p <= 163,250,000` | 2,667 |
+| [SLCMP84](candidates/SLCMP84.csv) | `163,250,000 < p <= 163,500,000` | 4,893 |
+| [SLCMP85](candidates/SLCMP85.csv) | `163,500,000 < p <= 163,750,000` | 4,821 |
+| [SLCMP86](candidates/SLCMP86.csv) | `163,750,000 < p <= 164,000,000` | 4,790 |
+| [SLCMP87](candidates/SLCMP87.csv) | `164,000,000 < p <= 164,250,000` | 4,687 |
+| [SLCMP88](candidates/SLCMP88.csv) | `164,250,000 < p <= 164,500,000` | 4,752 |
+| [SLCMP89](candidates/SLCMP89.csv) | `164,500,000 < p <= 164,750,000` | 4,734 |
+| [SLCMP90](candidates/SLCMP90.csv) | `164,750,000 < p <= 165,000,000` | 4,665 |
+| [SLCMP91](candidates/SLCMP91.csv) | `165,000,000 < p <= 165,250,000` | 4,549 |
+| [SLCMP92](candidates/SLCMP92.csv) | `165,250,000 < p <= 165,500,000` | 4,658 |
+| [SLCMP93](candidates/SLCMP93.csv) | `165,500,000 < p <= 165,750,000` | 4,581 |
+| [SLCMP94](candidates/SLCMP94.csv) | `165,750,000 < p <= 166,000,000` | 4,683 |
+| [SLCMP95](candidates/SLCMP95.csv) | `166,000,000 < p <= 166,250,000` | 4,779 |
+| [SLCMP96](candidates/SLCMP96.csv) | `166,250,000 < p <= 166,500,000` | 4,822 |
+| [SLCMP97](candidates/SLCMP97.csv) | `166,500,000 < p <= 166,750,000` | 4,704 |
+| [SLCMP98](candidates/SLCMP98.csv) | `166,750,000 < p <= 167,000,000` | 4,714 |
+| [SLCMP99](candidates/SLCMP99.csv) | `167,000,000 < p <= 167,250,000` | 4,762 |
+| [SLCMP100](candidates/SLCMP100.csv) | `167,250,000 < p <= 167,500,000` | 4,786 |
+| [SLCMP101](candidates/SLCMP101.csv) | `167,500,000 < p <= 167,750,000` | 4,770 |
+| [SLCMP102](candidates/SLCMP102.csv) | `167,750,000 < p <= 168,000,000` | 4,722 |
+| [SLCMP103](candidates/SLCMP103.csv) | `168,000,000 < p <= 168,250,000` | 4,576 |
+| [SLCMP104](candidates/SLCMP104.csv) | `168,250,000 < p <= 168,500,000` | 4,782 |
+| [SLCMP105](candidates/SLCMP105.csv) | `168,500,000 < p <= 168,750,000` | 4,643 |
+| [SLCMP106](candidates/SLCMP106.csv) | `168,750,000 < p <= 169,000,000` | 4,697 |
+| [SLCMP107](candidates/SLCMP107.csv) | `169,000,000 < p <= 169,250,000` | 4,982 |
+| [SLCMP108](candidates/SLCMP108.csv) | `169,250,000 < p <= 169,500,000` | 4,832 |
+| [SLCMP109](candidates/SLCMP109.csv) | `169,500,000 < p <= 169,750,000` | 4,847 |
+| [SLCMP110](candidates/SLCMP110.csv) | `169,750,000 < p <= 170,000,000` | 4,853 |
+| [SLCMP111](candidates/SLCMP111.csv) | `170,000,000 < p <= 170,250,000` | 4,945 |
+| [SLCMP112](candidates/SLCMP112.csv) | `170,250,000 < p <= 170,500,000` | 4,882 |
+| [SLCMP113](candidates/SLCMP113.csv) | `170,500,000 < p <= 170,750,000` | 4,832 |
+| [SLCMP114](candidates/SLCMP114.csv) | `170,750,000 < p <= 171,000,000` | 4,908 |
+| [SLCMP115](candidates/SLCMP115.csv) | `171,000,000 < p <= 171,250,000` | 4,923 |
+| [SLCMP116](candidates/SLCMP116.csv) | `171,250,000 < p <= 171,500,000` | 4,902 |
+| [SLCMP117](candidates/SLCMP117.csv) | `171,500,000 < p <= 171,750,000` | 4,817 |
+| [SLCMP118](candidates/SLCMP118.csv) | `171,750,000 < p <= 172,000,000` | 4,705 |
+| [SLCMP119](candidates/SLCMP119.csv) | `172,000,000 < p <= 172,250,000` | 4,729 |
+| [SLCMP120](candidates/SLCMP120.csv) | `172,250,000 < p <= 172,500,000` | 4,965 |
+| [SLCMP121](candidates/SLCMP121.csv) | `172,500,000 < p <= 172,750,000` | 4,867 |
+| [SLCMP122](candidates/SLCMP122.csv) | `172,750,000 < p <= 173,000,000` | 4,848 |
+| [SLCMP123](candidates/SLCMP123.csv) | `173,000,000 < p <= 173,250,000` | 4,837 |
+| [SLCMP124](candidates/SLCMP124.csv) | `173,250,000 < p <= 173,500,000` | 4,850 |
+| [SLCMP125](candidates/SLCMP125.csv) | `173,500,000 < p <= 173,750,000` | 4,921 |
+| [SLCMP126](candidates/SLCMP126.csv) | `173,750,000 < p <= 174,000,000` | 4,913 |
+| [SLCMP127](candidates/SLCMP127.csv) | `174,000,000 < p <= 174,250,000` | 4,825 |
+| [SLCMP128](candidates/SLCMP128.csv) | `174,250,000 < p <= 174,500,000` | 4,935 |
+| [SLCMP129](candidates/SLCMP129.csv) | `174,500,000 < p <= 174,750,000` | 4,742 |
+| [SLCMP130](candidates/SLCMP130.csv) | `174,750,000 < p <= 175,000,000` | 4,829 |
+| [SLCMP131](candidates/SLCMP131.csv) | `175,000,000 < p <= 175,250,000` | 4,867 |
+| [SLCMP132](candidates/SLCMP132.csv) | `175,250,000 < p <= 175,500,000` | 4,880 |
+| [SLCMP133](candidates/SLCMP133.csv) | `175,500,000 < p <= 175,750,000` | 4,852 |
+| [SLCMP134](candidates/SLCMP134.csv) | `175,750,000 < p <= 176,000,000` | 4,865 |
+| [SLCMP135](candidates/SLCMP135.csv) | `176,000,000 < p <= 176,250,000` | 4,634 |
+| [SLCMP136](candidates/SLCMP136.csv) | `176,250,000 < p <= 176,500,000` | 4,775 |
+| [SLCMP137](candidates/SLCMP137.csv) | `176,500,000 < p <= 176,750,000` | 4,894 |
+| [SLCMP138](candidates/SLCMP138.csv) | `176,750,000 < p <= 177,000,000` | 4,872 |
+| [SLCMP139](candidates/SLCMP139.csv) | `177,000,000 < p <= 177,250,000` | 4,848 |
+| [SLCMP140](candidates/SLCMP140.csv) | `177,250,000 < p <= 177,500,000` | 4,934 |
+| [SLCMP141](candidates/SLCMP141.csv) | `177,500,000 < p <= 177,750,000` | 4,856 |
+| [SLCMP142](candidates/SLCMP142.csv) | `177,750,000 < p <= 178,000,000` | 4,937 |
+| [SLCMP143](candidates/SLCMP143.csv) | `178,000,000 < p <= 178,250,000` | 4,913 |
+| [SLCMP144](candidates/SLCMP144.csv) | `178,250,000 < p <= 178,500,000` | 4,824 |
+| [SLCMP145](candidates/SLCMP145.csv) | `178,500,000 < p <= 178,750,000` | 4,821 |
+| [SLCMP146](candidates/SLCMP146.csv) | `178,750,000 < p <= 179,000,000` | 4,862 |
+| [SLCMP147](candidates/SLCMP147.csv) | `179,000,000 < p <= 179,250,000` | 4,935 |
+| [SLCMP148](candidates/SLCMP148.csv) | `179,250,000 < p <= 179,500,000` | 4,947 |
+| [SLCMP149](candidates/SLCMP149.csv) | `179,500,000 < p <= 179,750,000` | 4,899 |
+| [SLCMP150](candidates/SLCMP150.csv) | `179,750,000 < p <= 180,000,000` | 4,922 |
+| [SLCMP151](candidates/SLCMP151.csv) | `180,000,000 < p <= 180,250,000` | 4,698 |
+| [SLCMP152](candidates/SLCMP152.csv) | `180,250,000 < p <= 180,500,000` | 4,854 |
+| [SLCMP153](candidates/SLCMP153.csv) | `180,500,000 < p <= 180,750,000` | 4,871 |
+| [SLCMP154](candidates/SLCMP154.csv) | `180,750,000 < p <= 181,000,000` | 4,836 |
+| [SLCMP155](candidates/SLCMP155.csv) | `181,000,000 < p <= 181,250,000` | 4,776 |
+| [SLCMP156](candidates/SLCMP156.csv) | `181,250,000 < p <= 181,500,000` | 4,754 |
+| [SLCMP157](candidates/SLCMP157.csv) | `181,500,000 < p <= 181,750,000` | 4,862 |
+| [SLCMP158](candidates/SLCMP158.csv) | `181,750,000 < p <= 182,000,000` | 4,942 |
+| [SLCMP159](candidates/SLCMP159.csv) | `182,000,000 < p <= 182,250,000` | 4,877 |
+| [SLCMP160](candidates/SLCMP160.csv) | `182,250,000 < p <= 182,500,000` | 4,930 |
+| [SLCMP161](candidates/SLCMP161.csv) | `182,500,000 < p <= 182,750,000` | 4,808 |
+| [SLCMP162](candidates/SLCMP162.csv) | `182,750,000 < p <= 183,000,000` | 4,869 |
+| [SLCMP163](candidates/SLCMP163.csv) | `183,000,000 < p <= 183,250,000` | 4,849 |
+| [SLCMP164](candidates/SLCMP164.csv) | `183,250,000 < p <= 183,500,000` | 4,836 |
+| [SLCMP165](candidates/SLCMP165.csv) | `183,500,000 < p <= 183,750,000` | 4,914 |
+| [SLCMP166](candidates/SLCMP166.csv) | `183,750,000 < p <= 184,000,000` | 4,817 |
+| [SLCMP167](candidates/SLCMP167.csv) | `184,000,000 < p <= 184,250,000` | 4,911 |
+| [SLCMP168](candidates/SLCMP168.csv) | `184,250,000 < p <= 184,500,000` | 4,944 |
+| [SLCMP169](candidates/SLCMP169.csv) | `184,500,000 < p <= 184,750,000` | 4,809 |
+| [SLCMP170](candidates/SLCMP170.csv) | `184,750,000 < p <= 185,000,000` | 4,844 |
+| [SLCMP171](candidates/SLCMP171.csv) | `185,000,000 < p <= 185,250,000` | 4,896 |
+| [SLCMP172](candidates/SLCMP172.csv) | `185,250,000 < p <= 185,500,000` | 4,785 |
+| [SLCMP173](candidates/SLCMP173.csv) | `185,500,000 < p <= 185,750,000` | 4,793 |
+| [SLCMP174](candidates/SLCMP174.csv) | `185,750,000 < p <= 186,000,000` | 4,860 |
+| [SLCMP175](candidates/SLCMP175.csv) | `186,000,000 < p <= 186,250,000` | 4,841 |
+| [SLCMP176](candidates/SLCMP176.csv) | `186,250,000 < p <= 186,500,000` | 4,845 |
+| [SLCMP177](candidates/SLCMP177.csv) | `186,500,000 < p <= 186,750,000` | 4,925 |
+| [SLCMP178](candidates/SLCMP178.csv) | `186,750,000 < p <= 187,000,000` | 4,827 |
+| [SLCMP179](candidates/SLCMP179.csv) | `187,000,000 < p <= 187,250,000` | 4,853 |
+| [SLCMP180](candidates/SLCMP180.csv) | `187,250,000 < p <= 187,500,000` | 4,817 |
+| [SLCMP181](candidates/SLCMP181.csv) | `187,500,000 < p <= 187,750,000` | 4,675 |
+| [SLCMP182](candidates/SLCMP182.csv) | `187,750,000 < p <= 188,000,000` | 4,555 |
+| [SLCMP183](candidates/SLCMP183.csv) | `188,000,000 < p <= 188,250,000` | 4,858 |
+| [SLCMP184](candidates/SLCMP184.csv) | `188,250,000 < p <= 188,500,000` | 4,894 |
+| [SLCMP185](candidates/SLCMP185.csv) | `188,500,000 < p <= 188,750,000` | 4,839 |
+| [SLCMP186](candidates/SLCMP186.csv) | `188,750,000 < p <= 189,000,000` | 4,885 |
+| [SLCMP187](candidates/SLCMP187.csv) | `189,000,000 < p <= 189,250,000` | 4,905 |
+| [SLCMP188](candidates/SLCMP188.csv) | `189,250,000 < p <= 189,500,000` | 4,873 |
+| [SLCMP189](candidates/SLCMP189.csv) | `189,500,000 < p <= 189,750,000` | 4,915 |
+| [SLCMP190](candidates/SLCMP190.csv) | `189,750,000 < p <= 190,000,000` | 4,943 |
+| [SLCMP191](candidates/SLCMP191.csv) | `190,000,000 < p <= 190,250,000` | 4,773 |
+| [SLCMP192](candidates/SLCMP192.csv) | `190,250,000 < p <= 190,500,000` | 4,795 |
+| [SLCMP193](candidates/SLCMP193.csv) | `190,500,000 < p <= 190,750,000` | 4,639 |
+| [SLCMP194](candidates/SLCMP194.csv) | `190,750,000 < p <= 191,000,000` | 4,828 |
+| [SLCMP195](candidates/SLCMP195.csv) | `191,000,000 < p <= 191,250,000` | 4,799 |
+| [SLCMP196](candidates/SLCMP196.csv) | `191,250,000 < p <= 191,500,000` | 4,613 |
+| [SLCMP197](candidates/SLCMP197.csv) | `191,500,000 < p <= 191,750,000` | 4,524 |
+| [SLCMP198](candidates/SLCMP198.csv) | `191,750,000 < p <= 192,000,000` | 4,625 |
+| [SLCMP199](candidates/SLCMP199.csv) | `192,000,000 < p <= 192,250,000` | 4,359 |
+| [SLCMP200](candidates/SLCMP200.csv) | `192,250,000 < p <= 192,500,000` | 4,068 |
+| [SLCMP201](candidates/SLCMP201.csv) | `192,500,000 < p <= 192,750,000` | 1,112 |
+| [SLCMP202](candidates/SLCMP202.csv) | `192,750,000 < p <= 193,000,000` | 149 |
+| [SLCMP203](candidates/SLCMP203.csv) | `193,000,000 < p <= 193,250,000` | 732 |
+| [SLCMP204](candidates/SLCMP204.csv) | `193,250,000 < p <= 193,500,000` | 4,937 |
+| [SLCMP205](candidates/SLCMP205.csv) | `193,500,000 < p <= 193,750,000` | 4,960 |
+| [SLCMP206](candidates/SLCMP206.csv) | `193,750,000 < p <= 194,000,000` | 4,931 |
+| [SLCMP207](candidates/SLCMP207.csv) | `194,000,000 < p <= 194,250,000` | 4,939 |
+| [SLCMP208](candidates/SLCMP208.csv) | `194,250,000 < p <= 194,500,000` | 4,991 |
+| [SLCMP209](candidates/SLCMP209.csv) | `194,500,000 < p <= 194,750,000` | 4,972 |
+| [SLCMP210](candidates/SLCMP210.csv) | `194,750,000 < p <= 195,000,000` | 4,971 |
+| [SLCMP211](candidates/SLCMP211.csv) | `195,000,000 < p <= 195,250,000` | 4,883 |
+| [SLCMP212](candidates/SLCMP212.csv) | `195,250,000 < p <= 195,500,000` | 4,889 |
+| [SLCMP213](candidates/SLCMP213.csv) | `195,500,000 < p <= 195,750,000` | 4,852 |
+| [SLCMP214](candidates/SLCMP214.csv) | `195,750,000 < p <= 196,000,000` | 4,991 |
+| [SLCMP215](candidates/SLCMP215.csv) | `196,000,000 < p <= 196,250,000` | 4,803 |
+| [SLCMP216](candidates/SLCMP216.csv) | `196,250,000 < p <= 196,500,000` | 4,826 |
+| [SLCMP217](candidates/SLCMP217.csv) | `196,500,000 < p <= 196,750,000` | 4,950 |
+| [SLCMP218](candidates/SLCMP218.csv) | `196,750,000 < p <= 197,000,000` | 5,006 |
+| [SLCMP219](candidates/SLCMP219.csv) | `197,000,000 < p <= 197,250,000` | 4,908 |
+| [SLCMP220](candidates/SLCMP220.csv) | `197,250,000 < p <= 197,500,000` | 5,056 |
+| [SLCMP221](candidates/SLCMP221.csv) | `197,500,000 < p <= 197,750,000` | 4,835 |
+| [SLCMP222](candidates/SLCMP222.csv) | `197,750,000 < p <= 198,000,000` | 4,947 |
+| [SLCMP223](candidates/SLCMP223.csv) | `198,000,000 < p <= 198,250,000` | 4,914 |
+| **Total** |  | **961,529** |
 
 Each export link opens that test's complete candidate table. Every exponent
 remains a primality-unassigned search input.
