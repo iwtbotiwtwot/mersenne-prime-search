@@ -312,7 +312,8 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 | [SLCMP274](candidates/SLCMP274.csv) | `210,750,000 < p <= 211,000,000` | 4,951 |
 | [SLCMP275](candidates/SLCMP275.csv) | `211,000,000 < p <= 211,250,000` | 4,929 |
 | [SLCMP276](candidates/SLCMP276.csv) | `211,250,000 < p <= 211,500,000` | 4,984 |
-| **Total** |  | **1,224,323** |
+| [SLCMP277](candidates/SLCMP277.csv) | `211,500,000 < p <= 211,750,000` | 4,934 |
+| **Total** |  | **1,229,257** |
 
 Each export link opens that test's complete candidate table. Every exponent
 remains a primality-unassigned search input.
