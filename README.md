@@ -21,6 +21,49 @@ The sphere and its beats do not assign primality. Each proposed contact is
 handed to exact modular arithmetic. A confirmed factor assigns compositeness;
 without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 
+### Reciprocal information write
+
+SAM's executable interaction grammar follows the local cycle
+
+$$
+W8 \longrightarrow W9 \longrightarrow W8.
+$$
+
+`W8` is the local non-contact state. An interaction activates `X1` and writes
+`W9`; completion clears `X1` and returns the local state to `W8`. The endpoint
+therefore looks unchanged, but the directional fiber retains which signed
+route passed through it: **the state returns; the history does not.**
+
+The same transition-and-readback structure occurs in the reciprocal Mersenne
+history. Its directional state stores the incoming common state
+multiplicatively, and the write is recovered from the quotient of consecutive
+directional states. This is an exact structural correspondence; it does not
+identify a Mersenne recurrence depth as a literal physical `W8` or `W9` phase.
+
+### Mersenne mass-amplitude relation
+
+For a Mersenne object $M_p=2^p-1$, define the dyadic interaction amplitude
+
+$$
+\mu_p=2^{(p+1)/2}.
+$$
+
+It obeys the exact relation
+
+$$
+\mu_p^2=2(M_p+1),
+\qquad
+M_p=\frac{\mu_p^2}{2}-1.
+$$
+
+In the completed reciprocal orbit, every exact Mersenne-positive object in
+the executed $3\leq p\leq1024$ census reaches one of the two signed amplitudes
+$+\mu_p$ or $-\mu_p$ immediately before its common mode cancels to zero. The
+local reciprocal state then returns through $-1\rightarrow+1$, while the
+directional history retains the incoming sign. Here $\mu_p$ is a mass-shaped
+interaction amplitude whose half-square reconstructs the Mersenne value; it
+is not a literal assignment of physical rest mass to the exponent or integer.
+
 ## Test results
 
 | Test | Numerical result |
@@ -31,6 +74,9 @@ without one, the candidate remains unresolved and proceeds to Lucas--Lehmer.
 | MP-S6 frontier screen | 5,390 prime exponents tested; 1,282 exact factors; 4,108 survivors. |
 | MP-S7 factor ranking | 2,250 further exact factors; 1,858 candidates routed forward. |
 | MP-S8 first-singularity shell | 17,827,510 exact factor opportunities; 0 further factors; 1,858 candidates retained. |
+| MP-MASS1 dyadic amplitude | 13 of 13 exact positives reached $+\mu_p$ or $-\mu_p$ before terminal cancellation; 0 of 158 exact composites did. |
+| MP-MASS2 history retention | Incoming signed amplitude recovered from directional history for 13 of 13 positives despite one common returned local endpoint. |
+| MP-MASS4 native directional fiber | 4,718,592 of 4,718,592 signed writes and inverse writes recovered across the complete fiber; every local type completed `W8 -> W9 -> W8`. |
 
 ## Public candidate exports
 
