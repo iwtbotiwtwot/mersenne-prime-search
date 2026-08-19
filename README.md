@@ -10222,7 +10222,8 @@ is not a literal assignment of physical rest mass to the exponent or integer.
 | [SLCMP10138](candidates/SLCMP10138.csv) | `7,706,000,000 < p <= 7,707,000,000` | 33,759 |
 | [SLCMP10139](candidates/SLCMP10139.csv) | `7,707,000,000 < p <= 7,708,000,000` | 33,537 |
 | [SLCMP10140](candidates/SLCMP10140.csv) | `7,708,000,000 < p <= 7,709,000,000` | 33,557 |
-| **Total** |  | **248,273,298** |
+| [SLCMP10141](candidates/SLCMP10141.csv) | `7,709,000,000 < p <= 7,710,000,000` | 33,755 |
+| **Total** |  | **248,307,053** |
 
 Each export link opens that test's complete candidate table. Every exponent
 remains a primality-unassigned search input.
